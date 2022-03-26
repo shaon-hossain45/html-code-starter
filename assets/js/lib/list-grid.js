@@ -1,12 +1,12 @@
 /**
- * iTechPublic List Grid
+ * BitSecure List Grid
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js/lib
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js/lib
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -18,21 +18,21 @@
      * @return {[type]}   [description]
      */
     $(function() {
-        $("#itechid_9xj").on("click", function(event) {
+        $("#bitsecureid_9xj").on("click", function(event) {
             event.preventDefault();
             var thisby = $(this);
-            thisby.closest(".itechout-irm").children("li").removeClass("itech-active");
-            thisby.parent("li").addClass("itech-active");
-            thisby.closest(".itechout-vv0").find(".itechout-3bh").removeClass("row-cols-lg-3 row-cols-xl-4");
-            thisby.closest(".itechout-vv0").find(".itechout-3bh").addClass("itechscr-xy7 row-cols-lg-2 row-cols-xl-2");
+            thisby.closest(".bitsecureout-irm").children("li").removeClass("bitsecure-active");
+            thisby.parent("li").addClass("bitsecure-active");
+            thisby.closest(".bitsecureout-vv0").find(".bitsecureout-3bh").removeClass("row-cols-lg-3 row-cols-xl-4");
+            thisby.closest(".bitsecureout-vv0").find(".bitsecureout-3bh").addClass("bitsecurescr-xy7 row-cols-lg-2 row-cols-xl-2");
         });
-        $("#itechid_30u").on("click", function(event) {
+        $("#bitsecureid_30u").on("click", function(event) {
             event.preventDefault();
             var thisby = $(this);
-            thisby.closest(".itechout-irm").children("li").removeClass("itech-active");
-            thisby.parent("li").addClass("itech-active");
-            thisby.closest(".itechout-vv0").find(".itechout-3bh").removeClass("itechscr-xy7 row-cols-lg-2 row-cols-xl-2");
-            thisby.closest(".itechout-vv0").find(".itechout-3bh").addClass("row-cols-lg-3 row-cols-xl-4");
+            thisby.closest(".bitsecureout-irm").children("li").removeClass("bitsecure-active");
+            thisby.parent("li").addClass("bitsecure-active");
+            thisby.closest(".bitsecureout-vv0").find(".bitsecureout-3bh").removeClass("bitsecurescr-xy7 row-cols-lg-2 row-cols-xl-2");
+            thisby.closest(".bitsecureout-vv0").find(".bitsecureout-3bh").addClass("row-cols-lg-3 row-cols-xl-4");
         });
     });
 })(jQuery, window, document);

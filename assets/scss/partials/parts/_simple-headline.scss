@@ -6,53 +6,7 @@
 */
 
 
-/* iTechPublic headline sidebar start */
-
-.itechspl-jx8 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    z-index: 1;
-    h2 {
-        font-size: 1.25rem;
-        color: var(--color-fbwhite);
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-bottom: 0px;
-        line-height: 2;
-        span {
-            margin-right: 0.25rem;
-            margin-left: 0;
-        }
-    }
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0px;
-        top: 0;
-        left: 0;
-        width: 2px;
-        height: 100%;
-        background-color: var(--color-active);
-        -webkit-transition: all 0.15s;
-        -o-transition: all 0.15s;
-        -moz-transition: all 0.15s;
-        transition: all 0.15s;
-    }
-    /* cancel reply */
-    a {
-        text-decoration: none;
-        display: block;
-        position: relative;
-        -webkit-transition: all 0.15s;
-        -o-transition: all 0.15s;
-        -moz-transition: all 0.15s;
-        transition: all 0.15s;
-        color: var(--color-fbwhite);
-        &:hover {
-            color: var(--color-active);
-        }
-    }
-}
+/* BitSecure headline sidebar start */
 
 
-/* iTechPublic headline sidebar end */
+/* BitSecure headline sidebar end */

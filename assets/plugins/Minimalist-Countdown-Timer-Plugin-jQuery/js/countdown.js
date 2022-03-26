@@ -18,7 +18,7 @@
         // Modify by shaon
         if (seconds <= 0 || isNaN(seconds)) {
             //this.hide();
-            this.closest(".itech-ryl").hide();
+            this.closest(".bitsecure-ryl").hide();
             return this;
         }
 

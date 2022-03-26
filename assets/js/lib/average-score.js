@@ -1,12 +1,12 @@
 /**
- * iTechPublic Average Score
+ * BitSecure Average Score
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js/lib
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js/lib
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -18,9 +18,9 @@
      * @return {[type]} value    [description]
      */
     $(function() {
-        var slider = $(".itechpin-ak0");
-        var range = $(".itech-xv3");
-        var spanelement = $(".itech-3fg");
+        var slider = $(".bitsecurepin-ak0");
+        var range = $(".bitsecure-xv3");
+        var spanelement = $(".bitsecure-3fg");
 
         slider.each(function() {
 
@@ -37,13 +37,13 @@
                     sumdata += parseFloat($(this).val());
                 });
                 // Percentage score
-                function itechpublic_percentage(num, per) {
+                function bitsecurepublic_percentage(num, per) {
                     return (num / 100) * per;
                 }
-                var percentagescore = itechpublic_percentage(sumdata, 10) / 4;
+                var percentagescore = bitsecurepublic_percentage(sumdata, 10) / 4;
                 var modify = (percentagescore * 10).toFixed(1);
 
-                $("#itechid_k0v").html(parseFloat(modify) + "%");
+                $("#bitsecureid_k0v").html(parseFloat(modify) + "%");
 
             });
         });

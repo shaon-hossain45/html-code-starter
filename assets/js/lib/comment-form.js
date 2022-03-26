@@ -1,12 +1,12 @@
 /**
- * iTechPublic Comment
+ * BitSecure Comment
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js/lib
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js/lib
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -17,11 +17,11 @@
      * @param  {[type]} value    [description]
      * @return {[type]}          [description]
      */
-    $.validator.addMethod("itechFullName", function(value, element) {
+    $.validator.addMethod("bitsecureFullName", function(value, element) {
         return this.optional(element) || /^[a-zA-Z]+((['. -][a-zA-Z])?[a-zA-Z]*)*$/g.test(value);
     }, "Please enter a valid Full Name.");
 
-    $.validator.addMethod("itechEmail", function(value, element) {
+    $.validator.addMethod("bitsecureEmail", function(value, element) {
         return this.optional(element) || /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/g.test(value);
     }, "Please enter a valid email address.");
 
@@ -31,16 +31,16 @@
      * @return {[type]}          [description]
      */
     $("form#commentform").validate({
-        errorClass: "itech-error",
+        errorClass: "bitsecure-error",
         rules: {
             author: {
                 required: true,
-                itechFullName: true,
+                bitsecureFullName: true,
                 maxlength: 25
             },
             email: {
                 required: true,
-                itechEmail: true
+                bitsecureEmail: true
             },
             comment: {
                 required: true,

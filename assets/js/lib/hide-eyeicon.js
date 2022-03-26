@@ -1,12 +1,12 @@
 /**
- * iTechPublic Hide Eye Icon
+ * BitSecure Hide Eye Icon
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js/lib
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js/lib
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -18,8 +18,8 @@
      * @return {[type]} value    [description]
      */
     $(function() {
-        $(".itechout-klh input[type='password']+.itech-eyeicon").on("click", function() {
-            $(this).toggleClass("itech-active");
+        $(".bitsecureout-klh input[type='password']+.bitsecure-eyeicon").on("click", function() {
+            $(this).toggleClass("bitsecure-active");
 
             var input = $($(this).attr("data-toggle"));
 

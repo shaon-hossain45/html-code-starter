@@ -6,56 +6,56 @@
 */
 
 :root,
- :root.itech-light {
+ :root.bitsecure-light {
     //web back
-    --color-webback: #f0f2f5;
+    //--color-webback: #f0f2f5;
     //1st block
-    --color-ablock: #fff;
+    //--color-ablock: #fff;
     //2nd block
-    --color-abblock: #fff;
+    //--color-abblock: #fff;
     //block border
-    --color-bblock: #dddfe2;
-    --color-silblock: #d1d8e0;
-    --color-sucmsg: #f0f2f5;
+    //--color-bblock: #dddfe2;
+    //--color-silblock: #d1d8e0;
+    //--color-sucmsg: #f0f2f5;
     //font color
-    --color-fwhablack: #8492A6;
-    --color-fb2wha: #000;
+    //--color-fwhablack: #fff;
+    //--color-fb2wha: #000;
     //font headline
-    --color-fbwhite: #000;
+    //--color-fbwhite: #000;
     //font headline white to black
-    --color-fwhblack: #fff;
+    //--color-fwhblack: #fff;
     //soft
-    --color-softbor: rgba(221, 223, 226, 0.4);
+    //--color-softbor: rgba(221, 223, 226, 0.4);
     //white soft
-    --color-whitesoftb: #f6f6f7;
+    //--color-whitesoftb: #f6f6f7;
     //active
-    --color-active: #21c87a;
+    //--color-active: #243956;
 }
 
-:root.itech-dark {
+:root.bitsecure-dark {
     //web back
     --color-webback: #18191a;
     //1st block
-    --color-ablock: #242526;
+    //--color-ablock: #242526;
     //2nd block
-    --color-abblock: rgba(255, 255, 255, 0.1);
+    //--color-abblock: rgba(255, 255, 255, 0.1);
     //3rd border
-    --color-bblock: rgba(255, 255, 255, 0.1);
-    --color-silblock: rgba(255, 255, 255, 0.1);
-    --color-sucmsg: #18191a;
+    //--color-bblock: rgba(255, 255, 255, 0.1);
+    //--color-silblock: rgba(255, 255, 255, 0.1);
+    //--color-sucmsg: #18191a;
     //font color
-    --color-fwhablack: #b0b3b8;
-    --color-fb2wha: #e4e6eb;
+    //--color-fwhablack: #b0b3b8;
+    //--color-fb2wha: #e4e6eb;
     //font headline
-    --color-fbwhite: #fff;
+    //--color-fbwhite: #fff;
     //font headline white to black
-    --color-fwhblack: #000;
+    //--color-fwhblack: #000;
     //soft
-    --color-softbor: rgba(221, 223, 226, 0.1);
+    //--color-softbor: rgba(221, 223, 226, 0.1);
     //white soft
-    --color-whitesoftb: #1b1b1c;
+    //--color-whitesoftb: #1b1b1c;
     //active
-    --color-active: #fff;
+    //--color-active: #fff;
 }
 
 $color-active: #21c87a;

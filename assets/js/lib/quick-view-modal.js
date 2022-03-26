@@ -1,12 +1,12 @@
 /**
- * iTechPublic Quick View Modal js
+ * BitSecure Quick View Modal js
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -31,29 +31,29 @@
          */
         var data = {
             value: phoneid,
-            action: itechquickview_obj.action,
-            security: itechquickview_obj.security
+            action: bitsecurequickview_obj.action,
+            security: bitsecurequickview_obj.security
         };
 
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: itechquickview_obj.ajax_url,
+            url: bitsecurequickview_obj.ajax_url,
             data: data,
             beforeSend: function(xhr) {
-                $("#itechid_modal").find("span.spinner-grow").removeClass("d-none");
-                $("#itechid_modal").find(".itechscr-tew").html("");
+                $("#bitsecureid_modal").find("span.spinner-grow").removeClass("d-none");
+                $("#bitsecureid_modal").find(".bitsecurescr-tew").html("");
             },
             success: function(response) {
                 if (response["data"]["exists"]["insert"] == "success") {
-                    $("#itechid_modal").find(".itechscr-tew").html(response["data"]["outputHtml"]);
+                    $("#bitsecureid_modal").find(".bitsecurescr-tew").html(response["data"]["outputHtml"]);
                     /**
                      * OwlCarousel load in modal
                      * @param  {[type]} value    [description]
                      * @return {[type]} value    [description]
                      */
                     $(function() {
-                        $("#itechid_wkt").owlCarousel({
+                        $("#bitsecureid_wkt").owlCarousel({
                             loop: true,
                             margin: 5,
                             dots: false,
@@ -74,17 +74,17 @@
                         });
                     });
                     $(function() {
-                        $("#itechid_wkt .itech-ogt").on("click", "button", function(e) {
+                        $("#bitsecureid_wkt .bitsecure-ogt").on("click", "button", function(e) {
                             var thumbnailSrc = $(this).find("img").attr("src");
-                            $(this).closest(".itechscr-f4d").find("[data-preview='itech-gallery'] img").attr("data-hrsrc", thumbnailSrc);
-                            $(this).closest(".itechscr-f4d").find("[data-preview='itech-gallery'] img").attr("src", thumbnailSrc);
-                            $(this).closest(".itechscr-f4d").find("[data-preview='itech-gallery'] img").attr("srcset", thumbnailSrc);
+                            $(this).closest(".bitsecurescr-f4d").find("[data-preview='bitsecure-gallery'] img").attr("data-hrsrc", thumbnailSrc);
+                            $(this).closest(".bitsecurescr-f4d").find("[data-preview='bitsecure-gallery'] img").attr("src", thumbnailSrc);
+                            $(this).closest(".bitsecurescr-f4d").find("[data-preview='bitsecure-gallery'] img").attr("srcset", thumbnailSrc);
                         });
                     });
                 }
             },
             complete: function(xhr, textStatus) {
-                $("#itechid_modal").find("span.spinner-grow").addClass("d-none");
+                $("#bitsecureid_modal").find("span.spinner-grow").addClass("d-none");
             }
         });
     });

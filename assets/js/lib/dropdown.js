@@ -1,12 +1,12 @@
 /**
- * iTechPublic List Grid
+ * BitSecure List Grid
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js/lib
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js/lib
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -20,12 +20,12 @@
     $(function() {
         var current = window.location.search;
 
-        $(".itechspl-7nx ul li a").each(function() {
+        $(".bitsecurespl-7nx ul li a").each(function() {
             var $this = $(this);
             if ($this.attr("href") == current) {
-                $this.parent("li").addClass("itech-active");
+                $this.parent("li").addClass("bitsecure-active");
                 var $htmlData = $this.html();
-                $this.closest(".itechpin-upk").find("button span.itech-span").html($htmlData);
+                $this.closest(".bitsecurepin-upk").find("button span.bitsecure-span").html($htmlData);
             }
         })
 
@@ -43,7 +43,7 @@
         const urlParams = new URLSearchParams(queryString);
 
         // Number 1 Dropdown
-        $("#itechid_o1g").next(".itechspl-7nx").find("ul li a").each(function() {
+        $("#bitsecureid_o1g").next(".bitsecurespl-7nx").find("ul li a").each(function() {
             var href = $(this).attr("href");
 
             if (urlParams.has("pbrand")) {
@@ -55,7 +55,7 @@
         });
 
         // Number 2 Dropdown
-        $("#itechid_7kn").next(".itechspl-7nx").find("ul li a").each(function() {
+        $("#bitsecureid_7kn").next(".bitsecurespl-7nx").find("ul li a").each(function() {
             var href = $(this).attr("href");
 
             if (urlParams.has("sort")) {

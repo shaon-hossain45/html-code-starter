@@ -1,12 +1,12 @@
 /**
- * iTechPublic Modal Cart
+ * BitSecure Modal Cart
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js/lib
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js/lib
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -17,7 +17,7 @@
      * @param  {[type]} value    [description]
      * @return {[type]} value    [description]
      */
-    $("#itechid_hns, #itechid_rxz, #itechid_u1t").on("keypress", function(event) {
+    $("#bitsecureid_hns, #bitsecureid_rxz, #bitsecureid_u1t").on("keypress", function(event) {
         var keyPressed = event.keyCode || event.which;
         if (keyPressed === 13) {
             //alert("You pressed the Enter key!!");
@@ -26,7 +26,7 @@
         }
     });
 
-    $("button.itechscr-gay").on("click", function(e) {
+    $("button.bitsecurescr-gay").on("click", function(e) {
 
         // Stop Multiple form submission
         //e.preventDefault();
@@ -51,9 +51,9 @@
 
             if (searchinputval == "") {
                 isCompareValid = false;
-                searchinput.addClass("itech-error");
+                searchinput.addClass("bitsecure-error");
             } else {
-                searchinput.removeClass("itech-error");
+                searchinput.removeClass("bitsecure-error");
             }
         }
 
@@ -66,8 +66,8 @@
 
             var data = {
                 value: thisby.closest("form").serialize(),
-                action: itechcomsearch_obj.action,
-                security: itechcomsearch_obj.security
+                action: bitsecurecomsearch_obj.action,
+                security: bitsecurecomsearch_obj.security
             };
 
             var form = thisby.closest("form");
@@ -75,15 +75,15 @@
             $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: itechcomsearch_obj.ajax_url,
+                url: bitsecurecomsearch_obj.ajax_url,
                 data: data,
                 beforeSend: function(xhr) {
                     form.find("button[type='button']").children("span.spinner-grow").removeClass("d-none");
                 },
                 success: function(response) {
                     if (response["data"]["exists"]["insert"] == "success") {
-                        form.next(".itechscr-jk7").removeClass('d-none');
-                        form.next(".itechscr-jk7").find(".itechscr-ivf").html(response["data"]["outputHtml"]);
+                        form.next(".bitsecurescr-jk7").removeClass('d-none');
+                        form.next(".bitsecurescr-jk7").find(".bitsecurescr-ivf").html(response["data"]["outputHtml"]);
                     }
                 },
                 complete: function(xhr, textStatus) {

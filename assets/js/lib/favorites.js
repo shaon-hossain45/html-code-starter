@@ -1,12 +1,12 @@
 /**
- * iTechPublic Favourite
+ * BitSecure Favourite
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js/lib
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js/lib
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -18,14 +18,14 @@
      * @return {[type]} value    [description]
      */
 
-    $(".itechpin-yj3 button.itechscr-poe").on("click", function(event) {
+    $(".bitsecurepin-yj3 button.bitsecurescr-poe").on("click", function(event) {
         // Stop Multiple form submission
         event.preventDefault();
 
-        if (itechfav_obj.logged_in == true) {
+        if (bitsecurefav_obj.logged_in == true) {
             $(this).popover("hide");
 
-            $(this).toggleClass("itech-already");
+            $(this).toggleClass("bitsecure-already");
 
             var dataCollect = $(this).data("post_id");
 
@@ -36,15 +36,15 @@
              */
             var data = {
                 value: dataCollect,
-                action: itechfav_obj.action,
-                security: itechfav_obj.security
+                action: bitsecurefav_obj.action,
+                security: bitsecurefav_obj.security
             };
             var formButton = $(this);
 
             $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: itechfav_obj.ajax_url,
+                url: bitsecurefav_obj.ajax_url,
                 data: data,
                 success: function(response) {
                     if (response["success"] = true) {

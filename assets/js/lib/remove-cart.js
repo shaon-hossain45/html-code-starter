@@ -1,12 +1,12 @@
 /**
- * iTechPublic Modal Cart
+ * BitSecure Modal Cart
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js/lib
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js/lib
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -17,7 +17,7 @@
      * @param  {[type]} value    [description]
      * @return {[type]} value    [description]
      */
-    $(document).on("click", "#itechid_zok li button", function() {
+    $(document).on("click", "#bitsecureid_zok li button", function() {
 
         /**
          * Get Cookie from browser
@@ -42,7 +42,7 @@
         var dataValue = $(this).val();
 
         var removeCookies = [];
-        var check = getCookie("itech-modal-cart");
+        var check = getCookie("bitsecure-modal-cart");
         if (check != "") {
             // Split string (-) & return array
             removeCookies = check.split("-");
@@ -65,31 +65,31 @@
          */
         var data = {
             value: removeCookies,
-            action: itechremovecart_obj.action,
-            security: itechremovecart_obj.security
+            action: bitsecureremovecart_obj.action,
+            security: bitsecureremovecart_obj.security
         };
         var form = $(this);
 
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: itechremovecart_obj.ajax_url,
+            url: bitsecureremovecart_obj.ajax_url,
             data: data,
             success: function(response) {
                 if (response["data"]["exists"]["insert"] == "success") {
-                    $("#itechid_zok").html(response["data"]["outputHtml"]);
+                    $("#bitsecureid_zok").html(response["data"]["outputHtml"]);
                     if (response["data"]["length"] > 0) {
-                        $("#itechid_wco").addClass("itech-active");
+                        $("#bitsecureid_wco").addClass("bitsecure-active");
                     }
                     if (response["data"]["length"] > 3) {
-                        $("#itechid_5gv").closest(".itechout-2v9").children(".itech-alert").addClass("itech-active");
+                        $("#bitsecureid_5gv").closest(".bitsecureout-2v9").children(".bitsecure-alert").addClass("bitsecure-active");
                     } else {
-                        $("#itechid_5gv").closest(".itechout-2v9").children(".itech-alert").removeClass("itech-active");
+                        $("#bitsecureid_5gv").closest(".bitsecureout-2v9").children(".bitsecure-alert").removeClass("bitsecure-active");
                     }
                 } else {
-                    $("#itechid_zok").html(response["data"]["outputHtml"]);
-                    $(".itechsec-vyc").removeClass("itech-active");
-                    $("#itechid_wco").removeClass("itech-active");
+                    $("#bitsecureid_zok").html(response["data"]["outputHtml"]);
+                    $(".bitsecuresec-vyc").removeClass("bitsecure-active");
+                    $("#bitsecureid_wco").removeClass("bitsecure-active");
                 }
             }
         });

@@ -1,12 +1,12 @@
 /**
- * iTechPublic Reset Cart
+ * BitSecure Reset Cart
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js/lib
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js/lib
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -17,7 +17,7 @@
      * @param  {[type]} value    [description]
      * @return {[type]} value    [description]
      */
-    $("button.itechpart-fux").on("click", function() {
+    $("button.bitsecurepart-fux").on("click", function() {
 
         /**
          * Get Cookie from browser
@@ -39,9 +39,9 @@
          * Check Cookie / isn"t exists ?
          * @type {[type]}
          */
-        var check = getCookie("itech-modal-cart");
+        var check = getCookie("bitsecure-modal-cart");
         if (check != "" && check != null) {
-            delCookie("itech-modal-cart", "", 365);
+            delCookie("bitsecure-modal-cart", "", 365);
         }
 
         function delCookie(cname, cvalue, exdays) {
@@ -52,8 +52,8 @@
 
             document.cookie = cname + "=" + cvalue + "; expires= +" + now.toUTCString() + "; path=/ ";
 
-            $(".itechsec-vyc").removeClass("itech-active");
-            $("#itechid_wco").removeClass("itech-active");
+            $(".bitsecuresec-vyc").removeClass("bitsecure-active");
+            $("#bitsecureid_wco").removeClass("bitsecure-active");
         }
 
     });

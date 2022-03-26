@@ -1,12 +1,12 @@
 /**
- * iTechPublic Date Picker
+ * BitSecure Date Picker
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js/lib
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js/lib
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -19,11 +19,11 @@
      */
     $(function() {
         $.dobPicker({
-            daySelector: "#itechid_pjx",
+            daySelector: "#bitsecureid_pjx",
             /* Required */
-            monthSelector: "#itechid_qer",
+            monthSelector: "#bitsecureid_qer",
             /* Required */
-            yearSelector: "#itechid_sk9",
+            yearSelector: "#bitsecureid_sk9",
             /* Required */
             dayDefault: "Day",
             /* Optional */

@@ -1,0 +1,60 @@
+.bitsecuresec-onx {
+    .bitsecurepart-ajk {
+        padding-top: 114px !important;
+        padding-bottom: 100px !important;
+        .bitsecurepart-aef {
+            padding-top: 45px;
+            padding-bottom: 45px;
+            .bits-aw8 {
+                padding-left: 10px;
+                padding-right: 10px;
+                ul {
+                    margin-bottom: 12px;
+                    li {
+                        font-size: 14px;
+                        display: inline-block;
+                        margin-right: 16px;
+                        color: #616161;
+                    }
+                }
+            }
+            .bits-jfj {
+                padding-left: 10px;
+                padding-right: 10px;
+                h2 {
+                    font-size: 18px;
+                    margin-bottom: 9px;
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                    }
+                }
+            }
+            .bits-aru {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        .bitsecurepin-atu {
+            overflow: hidden;
+            border: 1px solid #e5e5e5;
+            border-radius: 2px;
+            .bitspix-yui {
+                overflow: hidden;
+                img {
+                    -webkit-transition: all 500ms linear 0ms;
+                    -khtml-transition: all 500ms linear 0ms;
+                    -moz-transition: all 500ms linear 0ms;
+                    -ms-transition: all 500ms linear 0ms;
+                    -o-transition: all 500ms linear 0ms;
+                    transition: all 500ms linear 0ms;
+                }
+            }
+            &:hover {
+                img {
+                    transform: scale(1.15);
+                }
+            }
+        }
+    }
+}

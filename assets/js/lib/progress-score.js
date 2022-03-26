@@ -1,12 +1,12 @@
 /**
- * iTechPublic Progress Score Animation
+ * BitSecure Progress Score Animation
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js/lib
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js/lib
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -18,7 +18,7 @@
      * @return {[type]}   [description]
      */
     $(function() {
-        $("li a[href='#itechid_syk']").one("click", function() {
+        $("li a[href='#bitsecureid_syk']").one("click", function() {
             $(".progress-bar").each(function() {
                 var Proval = $(this).attr("aria-valuenow") + "%";
                 $(this).animate({ width: Proval }, { duration: 700, easing: "easeOutCirc" });

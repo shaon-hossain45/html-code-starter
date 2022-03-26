@@ -1,12 +1,12 @@
 /**
- * iTechPublic Sticky Share
+ * BitSecure Sticky Share
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js/lib
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js/lib
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -18,16 +18,16 @@
      * @return {[type]} value    [description]
      */
     $(function() {
-        var sideShare = $(".itechout-ucv");
+        var sideShare = $(".bitsecureout-ucv");
         var winHeight = $(document).height() - 1000;
         $(window).scroll(function() {
             if ($(window).scrollTop() >= 300) {
-                sideShare.addClass("itech-active");
+                sideShare.addClass("bitsecure-active");
             } else {
-                sideShare.removeClass("itech-active");
+                sideShare.removeClass("bitsecure-active");
             }
             if ($(window).scrollTop() >= winHeight) {
-                sideShare.removeClass("itech-active");
+                sideShare.removeClass("bitsecure-active");
             }
         });
     });

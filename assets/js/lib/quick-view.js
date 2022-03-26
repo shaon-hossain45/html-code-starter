@@ -1,12 +1,12 @@
 /**
- * iTechPublic Quick View Modal js
+ * BitSecure Quick View Modal js
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -17,6 +17,6 @@
      * @return {[type]}   [description]
      */
     $(".btn.quickview-modal").data("toggle", "modal").click(function() {
-        $("#itechid_modal").modal('show');
+        $("#bitsecureid_modal").modal('show');
     });
 })(jQuery, window, document);

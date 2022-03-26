@@ -1,12 +1,12 @@
 /**
- * iTechPublic Sticky Aside More Reviews
+ * BitSecure Sticky Aside More Reviews
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js/lib
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js/lib
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -18,20 +18,20 @@
      * @return {[type]} value    [description]
      */
     $(function() {
-        var toggleAslideBtn = $("#itechid_kxo");
-        var modalAslideWrap = $("#itechid_slp");
-        var closeElement = $("#itechid_ytr");
+        var toggleAslideBtn = $("#bitsecureid_kxo");
+        var modalAslideWrap = $("#bitsecureid_slp");
+        var closeElement = $("#bitsecureid_ytr");
         toggleAslideBtn.on("click", function() {
-            modalAslideWrap.toggleClass("itech-active");
-            closeElement.toggleClass("itech-active");
+            modalAslideWrap.toggleClass("bitsecure-active");
+            closeElement.toggleClass("bitsecure-active");
         });
 
         // Close button
         closeElement.on("click", function(event) {
             var thisby = $(this);
-            thisby.removeClass("itech-active");
-            thisby.closest("body").find(".itechsec-oi3").removeClass("itech-active");
-            thisby.removeClass("itech-active");
+            thisby.removeClass("bitsecure-active");
+            thisby.closest("body").find(".bitsecuresec-oi3").removeClass("bitsecure-active");
+            thisby.removeClass("bitsecure-active");
         });
     });
 })(jQuery, window, document);

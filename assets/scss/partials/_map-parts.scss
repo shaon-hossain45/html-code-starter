@@ -1,0 +1,21 @@
+.bitsecuresec-5nx {
+    padding-top: 114px !important;
+    padding-bottom: 100px !important;
+    .card {
+        padding-top: 20px;
+        align-items: center;
+        box-shadow: 0 0 4px #efefef;
+        background-color: #39c;
+        span i {
+            color: #ed7d31;
+            font-size: 45px;
+        }
+        .card-body {
+            color: #fff;
+            text-align: center;
+            .card-title {
+                font-size: 34px;
+            }
+        }
+    }
+}

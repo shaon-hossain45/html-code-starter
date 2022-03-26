@@ -1,12 +1,12 @@
 /**
- * iTechPublic Contact Us
+ * BitSecure Contact Us
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js/lib
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js/lib
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -27,7 +27,7 @@
      * @param  {[type]}    [description]
      * @return {[type]}    [description]
      */
-    $(document).on("submit", "form#itechid_aub", function(e) {
+    $(document).on("submit", "form#bitsecureid_aub", function(e) {
         // Stop Multiple form submission
         e.preventDefault();
 
@@ -39,24 +39,24 @@
 
         function contFullnameValid() {
             isFullNameValid = true;
-            var contfullname = $("#itechid_9mr");
+            var contfullname = $("#bitsecureid_9mr");
             var contfullnameval = contfullname.val();
             var contfullnameregex = /^[a-zA-Z]+((['. -][a-zA-Z ])?[a-zA-Z]*)*$/g;
 
             if (contfullnameval == "") {
                 isFullNameValid = false;
-                contfullname.addClass("itech-error");
+                contfullname.addClass("bitsecure-error");
                 contfullname.next("span").html("");
             } else if (!contfullnameval.match(contfullnameregex)) {
                 isFullNameValid = false;
-                contfullname.addClass("itech-error");
+                contfullname.addClass("bitsecure-error");
                 contfullname.next("span").html("Please use A-Za-z.'- characters");
             } else if (contfullnameval.length > 50) {
                 isFullNameValid = false;
-                contfullname.addClass("itech-error");
+                contfullname.addClass("bitsecure-error");
                 contfullname.next("span").html("Please use a maximum of 50 characters");
             } else {
-                contfullname.removeClass("itech-error");
+                contfullname.removeClass("bitsecure-error");
                 contfullname.next("span").html("");
             }
         }
@@ -69,20 +69,20 @@
 
         function contEmailValid() {
             isEmailValid = true;
-            var contemail = $("#itechid_c4r");
+            var contemail = $("#bitsecureid_c4r");
             var contemailval = contemail.val();
             var contemailregex = /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/g;
 
             if (contemailval == "") {
                 isEmailValid = false;
-                contemail.addClass("itech-error");
+                contemail.addClass("bitsecure-error");
                 contemail.next("span").html("");
             } else if (!contemailval.match(contemailregex)) {
                 isEmailValid = false;
-                contemail.addClass("itech-error");
+                contemail.addClass("bitsecure-error");
                 contemail.next("span").html("Please use a valid email address");
             } else {
-                contemail.removeClass("itech-error");
+                contemail.removeClass("bitsecure-error");
                 contemail.next("span").html("");
             }
         }
@@ -95,19 +95,19 @@
 
         function contSubjectValid() {
             isSubjectValid = true;
-            var contSubject = $("#itechid_7tj");
+            var contSubject = $("#bitsecureid_7tj");
             var contSubjectval = contSubject.val();
 
             if (contSubjectval == "") {
                 isSubjectValid = false;
-                contSubject.addClass("itech-error");
+                contSubject.addClass("bitsecure-error");
                 contSubject.next("span").html("");
             } else if (contSubjectval.length > 150) {
                 isSubjectValid = false;
-                contSubject.addClass("itech-error");
+                contSubject.addClass("bitsecure-error");
                 contSubject.next("span").html("Please use a maximum of 150 characters");
             } else {
-                contSubject.removeClass("itech-error");
+                contSubject.removeClass("bitsecure-error");
                 contSubject.next("span").html("");
             }
         }
@@ -120,19 +120,19 @@
 
         function contMessageValid() {
             isMessageValid = true;
-            var contMessage = $("#itechid_7k8");
+            var contMessage = $("#bitsecureid_7k8");
             var contMessageval = contMessage.val();
 
             if (contMessageval == "") {
                 isMessageValid = false;
-                contMessage.addClass("itech-error");
+                contMessage.addClass("bitsecure-error");
                 contMessage.next("span").html("");
             } else if (contMessageval.length > 2000) {
                 isMessageValid = false;
-                contMessage.addClass("itech-error");
+                contMessage.addClass("bitsecure-error");
                 contMessage.next("span").html("Please use a maximum of 2000 characters");
             } else {
-                contMessage.removeClass("itech-error");
+                contMessage.removeClass("bitsecure-error");
                 contMessage.next("span").html("");
             }
         }
@@ -145,12 +145,12 @@
 
         function contPrivacyValid() {
             isPrivacyValid = true;
-            var contPrivacy = $("#itechid_f4j");
+            var contPrivacy = $("#bitsecureid_f4j");
             if (!contPrivacy.is(":checked")) {
                 isPrivacyValid = false;
-                contPrivacy.next().addClass("itech-error");
+                contPrivacy.next().addClass("bitsecure-error");
             } else if (contPrivacy.is(":checked")) {
-                contPrivacy.next().removeClass("itech-error");
+                contPrivacy.next().removeClass("bitsecure-error");
             }
         }
 
@@ -164,8 +164,8 @@
              */
             var data = {
                 value: $(this).serialize(),
-                action: itechcont_obj.action,
-                security: itechcont_obj.security
+                action: bitsecurecont_obj.action,
+                security: bitsecurecont_obj.security
             };
 
             var form = $(this);
@@ -173,7 +173,7 @@
             $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: itechcont_obj.ajax_url,
+                url: bitsecurecont_obj.ajax_url,
                 data: data,
                 beforeSend: function(xhr) {
                     form.find("button[type='submit']").children("span.spinner-grow").removeClass("d-none");
@@ -181,10 +181,10 @@
                 success: function(response) {
                     if (response["data"]["exists"]["insert"] == "success") {
                         form.find("button[type='submit']").removeAttr("disabled");
-                        $("#itechid_b9f").addClass("itech-active");
-                        $("#itechid_b9f .itechpin-wjj h4").html("Thank you for contact us.");
+                        $("#bitsecureid_b9f").addClass("bitsecure-active");
+                        $("#bitsecureid_b9f .bitsecurepin-wjj h4").html("Thank you for contact us.");
                         form[0].reset();
-                        $("#itechid_b9f").on("click", function() {
+                        $("#bitsecureid_b9f").on("click", function() {
                             window.location.href = response["data"]["exists"]["url"];
                         })
                     }

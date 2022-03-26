@@ -29,11 +29,8 @@ $large-min: '(min-width: 1200px)';
 /* Extra breakpoint */
 
 $extra-large-min: '(min-width: 1400px)';
-
-/*
-@media only screen and (min-width : 1400px) {
-  .container {
-    max-width: 1240px;
-  }
+@media only screen and (min-width: 1400px) {
+    .container {
+        max-width: 1240px;
+    }
 }
-*/

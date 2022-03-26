@@ -1,12 +1,12 @@
 /**
- * iTechPublic Main js
+ * BitSecure Main js
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -25,16 +25,16 @@
             if (stpvalue < lastScrollTop) {
                 // Topper finishing remove
                 if (stpvalue <= 750) {
-                    $("body").removeClass("itechscr-xre");
-                    $("header").removeClass("itechscr-xnu");
+                    $("body").removeClass("bitsecurescr-xre");
+                    $("header").removeClass("bitsecurescr-xnu");
                 } else {
-                    $("body").addClass("itechscr-xre");
-                    $("header").addClass("itechscr-xnu");
+                    $("body").addClass("bitsecurescr-xre");
+                    $("header").addClass("bitsecurescr-xnu");
                 }
             } else {
                 // When scroll top to bottom
-                $("body").removeClass("itechscr-xre");
-                $("header").removeClass("itechscr-xnu");
+                $("body").removeClass("bitsecurescr-xre");
+                $("header").removeClass("bitsecurescr-xnu");
             }
             // Store data
             lastScrollTop = stpvalue;
@@ -48,27 +48,27 @@
      */
     $(function() {
         // Hamburger click
-        $("#itechid_uba").on("click", function(event) {
+        $("#bitsecureid_uba").on("click", function(event) {
             var thisby = $(this);
             // Thumb bar animation
-            thisby.toggleClass("itech-active");
-            $("#itechid_xhw").addClass("itech-active");
+            thisby.toggleClass("bitsecure-active");
+            $("#bitsecureid_xhw").addClass("bitsecure-active");
             // Modal responsive nav part
-            thisby.closest("body").find(".itechpart-8xo").addClass("itech-active");
+            thisby.closest("body").find(".bitsecurepart-8xo").addClass("bitsecure-active");
             // White flow animation part
-            thisby.closest("body").addClass("itechscr-2mv");
+            thisby.closest("body").addClass("bitsecurescr-2mv");
         });
 
         // Thumb crosbar click
-        $("#itechid_xhw").on("click", function(event) {
+        $("#bitsecureid_xhw").on("click", function(event) {
             var thisby = $(this);
-            thisby.removeClass("itech-active");
+            thisby.removeClass("bitsecure-active");
             // Thumb bar remove
-            $("#itechid_uba").removeClass("itech-active");
+            $("#bitsecureid_uba").removeClass("bitsecure-active");
             // Modal responsive nav part remove
-            thisby.closest("body").find(".itechpart-8xo").removeClass("itech-active");
+            thisby.closest("body").find(".bitsecurepart-8xo").removeClass("bitsecure-active");
             // White flow animation part remove
-            thisby.closest("body").removeClass("itechscr-2mv");
+            thisby.closest("body").removeClass("bitsecurescr-2mv");
         });
     });
 
@@ -78,20 +78,20 @@
      * @return {[type]}   [description]
      */
     $(function() {
-        $("#itechid_4xl, #itechid_v4a").on("click", function(event) {
+        $("#bitsecureid_4xl, #bitsecureid_v4a").on("click", function(event) {
             event.stopPropagation();
 
             var thisby = $(this);
-            var navdropdown = $(".itechout-mrp");
-            var form = $("form#itechid_ohk");
-            var searchsec = $(".itechsec-hud");
-            var seacrhcon = $(".itechsec-hud .itech-pxb");
-            var searchclose = $("#itechid_yqr");
-            searchclose.addClass("itech-active");
+            var navdropdown = $(".bitsecureout-mrp");
+            var form = $("form#bitsecureid_ohk");
+            var searchsec = $(".bitsecuresec-hud");
+            var seacrhcon = $(".bitsecuresec-hud .bitsecure-pxb");
+            var searchclose = $("#bitsecureid_yqr");
+            searchclose.addClass("bitsecure-active");
             form[0].reset();
-            navdropdown.removeClass("itech-active");
-            thisby.closest("body").toggleClass("itechscr-vbn");
-            searchsec.toggleClass("itech-active");
+            navdropdown.removeClass("bitsecure-active");
+            thisby.closest("body").toggleClass("bitsecurescr-vbn");
+            searchsec.toggleClass("bitsecure-active");
 
             // Search content stop
             seacrhcon.click(function(event) {
@@ -99,10 +99,10 @@
             });
 
             // Close search modal
-            $("body,#itechid_k6m").click(function() {
-                $("body").removeClass("itechscr-vbn");
-                searchsec.removeClass("itech-active");
-                searchclose.removeClass("itech-active");
+            $("body,#bitsecureid_k6m").click(function() {
+                $("body").removeClass("bitsecurescr-vbn");
+                searchsec.removeClass("bitsecure-active");
+                searchclose.removeClass("bitsecure-active");
                 form[0].reset();
             });
 
@@ -115,12 +115,12 @@
      * @return {[type]}   [description]
      */
     $(function() {
-        var scrollid = $("#itechid_lxo");
+        var scrollid = $("#bitsecureid_lxo");
         $(window).scroll(function() {
             if ($(window).scrollTop() >= 500) {
-                scrollid.addClass("itech-active");
+                scrollid.addClass("bitsecure-active");
             } else {
-                scrollid.removeClass("itech-active");
+                scrollid.removeClass("bitsecure-active");
             }
         });
         scrollid.on("click", function() {
@@ -134,21 +134,21 @@
      * @return {[type]}   [description]
      */
     $(function() {
-        var navlidrop = $("#itechid_qv4 li.dropdown");
-        navlidrop.removeClass("itech-active");
+        var navlidrop = $("#bitsecureid_qv4 li.dropdown");
+        navlidrop.removeClass("bitsecure-active");
         navlidrop.on("click", function(event) {
             // Event only work in this - not working children element
             if (event.target !== this)
                 return;
             var thisby = $(this);
-            if (thisby.hasClass("itech-active")) {
-                thisby.removeClass("itech-active");
-                thisby.find(".itechpart-vxy").slideUp();
+            if (thisby.hasClass("bitsecure-active")) {
+                thisby.removeClass("bitsecure-active");
+                thisby.find(".bitsecurepart-vxy").slideUp();
             } else {
-                thisby.siblings().removeClass("itech-active");
-                thisby.siblings().children(".itechpart-vxy").slideUp();
-                thisby.toggleClass("itech-active");
-                thisby.find(".itechpart-vxy").slideToggle();
+                thisby.siblings().removeClass("bitsecure-active");
+                thisby.siblings().children(".bitsecurepart-vxy").slideUp();
+                thisby.toggleClass("bitsecure-active");
+                thisby.find(".bitsecurepart-vxy").slideToggle();
             }
         });
     });
@@ -159,39 +159,39 @@
      * @return {[type]}   [description]
      */
     $(function() {
-        var modalWrap = $("#itechid_grt");
-        var closeElement = $("#itechid_vrc");
-        var balanceElement = $("#itechid_wco");
-        var compareButton = $("#itechid_5gv");
+        var modalWrap = $("#bitsecureid_grt");
+        var closeElement = $("#bitsecureid_vrc");
+        var balanceElement = $("#bitsecureid_wco");
+        var compareButton = $("#bitsecureid_5gv");
 
-        $(".itechspl-cxz input[type='checkbox'],.itechspl-z9b input[type='checkbox']").change(function() {
+        $(".bitsecurespl-cxz input[type='checkbox'],.bitsecurespl-z9b input[type='checkbox']").change(function() {
             // Modal open
             if ($(this).is(":checked")) {
-                if (!modalWrap.hasClass("itech-active")) {
-                    modalWrap.addClass("itech-active");
-                    closeElement.addClass("itech-active");
+                if (!modalWrap.hasClass("bitsecure-active")) {
+                    modalWrap.addClass("bitsecure-active");
+                    closeElement.addClass("bitsecure-active");
                 }
             }
         });
         // Close button
         closeElement.on("click", function(event) {
             var thisby = $(this);
-            thisby.removeClass("itech-active");
-            thisby.closest("body").find(".itechsec-vyc").removeClass("itech-active");
+            thisby.removeClass("bitsecure-active");
+            thisby.closest("body").find(".bitsecuresec-vyc").removeClass("bitsecure-active");
         });
 
         var liLength = modalWrap.find("ul").children().length;
 
         if (liLength > 0) {
-            balanceElement.addClass("itech-active");
+            balanceElement.addClass("bitsecure-active");
         }
         if (liLength > 3) {
-            compareButton.closest(".itechout-2v9").children(".itech-alert").addClass("itech-active");
+            compareButton.closest(".bitsecureout-2v9").children(".bitsecure-alert").addClass("bitsecure-active");
         }
         // Balance button
         balanceElement.on("click", function(event) {
-            modalWrap.toggleClass("itech-active");
-            closeElement.toggleClass("itech-active");
+            modalWrap.toggleClass("bitsecure-active");
+            closeElement.toggleClass("bitsecure-active");
         });
     });
 
@@ -203,18 +203,18 @@
     $(function() {
         var current = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search;
         var semi_current = window.location.pathname + window.location.search;
-        $("#itechid_low li a").each(function() {
+        $("#bitsecureid_low li a").each(function() {
             var $this = $(this);
             // if the current path is like this link, make it active
             if (($this.attr("href") == current) || ($this.attr("href") == semi_current)) {
-                $this.parent("li").addClass("itech-active");
+                $this.parent("li").addClass("bitsecure-active");
             }
         });
-        $(".itechpin-zju a").each(function() {
+        $(".bitsecurepin-zju a").each(function() {
             var $this = $(this);
             // if the current path is like this link, make it active
             if (($this.attr("href") == current) || ($this.attr("href") == semi_current)) {
-                $this.addClass("itech-active");
+                $this.addClass("bitsecure-active");
             }
         })
     });
@@ -225,27 +225,27 @@
      * @return {[type]}   [description]
      */
     $(function() {
-        $("#itechid_7kn, #itechid_o1g, #itechid_lkd, #itechid_wrq").on("click", function(event) {
+        $("#bitsecureid_7kn, #bitsecureid_o1g, #bitsecureid_lkd, #bitsecureid_wrq").on("click", function(event) {
             event.stopPropagation();
 
-            var searchsec = $(".itechsec-hud");
-            var form = $("form#itechid_ohk");
+            var searchsec = $(".bitsecuresec-hud");
+            var form = $("form#bitsecureid_ohk");
 
-            $("body").removeClass("itechscr-vbn");
-            searchsec.removeClass("itech-active");
+            $("body").removeClass("bitsecurescr-vbn");
+            searchsec.removeClass("bitsecure-active");
             form[0].reset();
 
             var thisby = $(this);
-            var navdropdown = $(".itechout-mrp");
-            navdropdown.not(thisby.next()).removeClass("itech-active");
-            thisby.next(".itechout-mrp").toggleClass("itech-active");
+            var navdropdown = $(".bitsecureout-mrp");
+            navdropdown.not(thisby.next()).removeClass("bitsecure-active");
+            thisby.next(".bitsecureout-mrp").toggleClass("bitsecure-active");
 
             navdropdown.click(function(event) {
                 event.stopPropagation();
             });
 
             $("body").click(function() {
-                navdropdown.removeClass("itech-active");
+                navdropdown.removeClass("bitsecure-active");
             });
 
         });
@@ -257,24 +257,24 @@
      * @return {[type]}   [description]
      */
     $(function() {
-        $("#itechid_ohk input[type='search']").focus(function() {
+        $("#bitsecureid_ohk input[type='search']").focus(function() {
             var thisby = $(this);
-            thisby.addClass("itech-active");
-            thisby.closest("form").find("button.itech-xu1").addClass("itech-active");
+            thisby.addClass("bitsecure-active");
+            thisby.closest("form").find("button.bitsecure-xu1").addClass("bitsecure-active");
         });
 
-        $("#itechid_ohk input[type='search']").blur(function() {
+        $("#bitsecureid_ohk input[type='search']").blur(function() {
             var thisby = $(this);
             var inputVal = thisby.val();
             if (inputVal) {
-                thisby.addClass("itech-active");
-                thisby.closest("form").find("button.itech-xu1").addClass("itech-active");
+                thisby.addClass("bitsecure-active");
+                thisby.closest("form").find("button.bitsecure-xu1").addClass("bitsecure-active");
             } else {
-                thisby.removeClass("itech-active");
-                thisby.closest("form").find("button.itech-xu1").removeClass("itech-active");
+                thisby.removeClass("bitsecure-active");
+                thisby.closest("form").find("button.bitsecure-xu1").removeClass("bitsecure-active");
             }
         });
-        var inputVal = $("#itechid_ohk input[type='search']").val();
+        var inputVal = $("#bitsecureid_ohk input[type='search']").val();
     });
 
     /**
@@ -283,13 +283,13 @@
      * @return {[type]}   [description]
      */
     $(function() {
-        $("select#itechid_4bv, select#itechid_iye").change(function() {
+        $("select#bitsecureid_4bv, select#bitsecureid_iye").change(function() {
             var thisby = $(this);
             var selected = thisby.children("option:selected").val();
             if (selected == "phone") {
                 thisby.next("select").removeAttr("disabled");
             } else {
-                thisby.next("select.itech-dependable").prop("disabled", true);
+                thisby.next("select.bitsecure-dependable").prop("disabled", true);
             }
         }).trigger("change");
     });
@@ -300,7 +300,7 @@
      * @return {[type]}   [description]
      */
     $(function() {
-        $("button.itechpart-fux[data-toggle='popover']").popover();
+        $("button.bitsecurepart-fux[data-toggle='popover']").popover();
     });
 
 })(jQuery, window, document);

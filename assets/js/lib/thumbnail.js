@@ -1,12 +1,12 @@
 /**
- * iTechPublic Thumbnail
+ * BitSecure Thumbnail
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js/lib
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js/lib
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 (function($, window, document, undefined) {
@@ -18,11 +18,11 @@
      * @return {[type]} value    [description]
      */
     $(function() {
-        $("#itechid_wkr .itech-ogt").on("click", "button", function(e) {
+        $("#bitsecureid_wkr .bitsecure-ogt").on("click", "button", function(e) {
             var thumbnailSrc = $(this).find("img").attr("src");
-            $(this).closest(".itechscr-f4d").find("[data-preview='itech-gallery'] img").attr("data-hrsrc", thumbnailSrc);
-            $(this).closest(".itechscr-f4d").find("[data-preview='itech-gallery'] img").attr("src", thumbnailSrc);
-            $(this).closest(".itechscr-f4d").find("[data-preview='itech-gallery'] img").attr("srcset", thumbnailSrc);
+            $(this).closest(".bitsecurescr-f4d").find("[data-preview='bitsecure-gallery'] img").attr("data-hrsrc", thumbnailSrc);
+            $(this).closest(".bitsecurescr-f4d").find("[data-preview='bitsecure-gallery'] img").attr("src", thumbnailSrc);
+            $(this).closest(".bitsecurescr-f4d").find("[data-preview='bitsecure-gallery'] img").attr("srcset", thumbnailSrc);
         });
     });
 

@@ -1,12 +1,12 @@
 /**
- * iTechPublic Dark Mode
+ * BitSecure Dark Mode
  * 
- * @package    itechpublic
- * @subpackage itechpublic/assets/js/lib
+ * @package    bitsecurepublic
+ * @subpackage bitsecurepublic/assets/js/lib
  * @since      1.0.0
  * @author     Shaon Hossain
  * @license    GNU General Public License v2 or later
- * @link       https://itechpublic.com/
+ * @link       https://bitsecurepublic.com/
  */
 
 function createCookie(name, value, days) {
@@ -49,70 +49,70 @@ $(function() {
     const currentTheme = localStorage.getItem("theme");
     //console.log("theme= " + currentTheme);
 
-    const itechdm = readCookie("itech-dark-mode");
-    //console.log("cookie= " + itechdm);
+    const bitsecuredm = readCookie("bitsecure-dark-mode");
+    //console.log("cookie= " + bitsecuredm);
 
-    //var isDarkClass = document.documentElement.classList.contains('itech-dark');
+    //var isDarkClass = document.documentElement.classList.contains('bitsecure-dark');
     //console.log("class= " + isDarkClass);
 
-    if (itechdm == "false") {
-        document.documentElement.classList.remove("itech-dark");
-        document.documentElement.querySelector("#itechid_dark .itech-dlw a.itech-sun").classList.add("itech-active");
-        document.documentElement.querySelector("#itechid_dark").classList.remove("itech-darkmode");
-        document.documentElement.querySelector("#itechid_dark .itech-dlw a.itech-moon").classList.remove("itech-active");
+    if (bitsecuredm == "false") {
+        document.documentElement.classList.remove("bitsecure-dark");
+        document.documentElement.querySelector("#bitsecureid_dark .bitsecure-dlw a.bitsecure-sun").classList.add("bitsecure-active");
+        document.documentElement.querySelector("#bitsecureid_dark").classList.remove("bitsecure-darkmode");
+        document.documentElement.querySelector("#bitsecureid_dark .bitsecure-dlw a.bitsecure-moon").classList.remove("bitsecure-active");
         // Otherwise, if the user's preference in localStorage is light...
-    } else if (((currentTheme == "dark") || (prefersDarkScheme.matches)) && (itechdm == null)) {
+    } else if (((currentTheme == "dark") || (prefersDarkScheme.matches)) && (bitsecuredm == null)) {
         // ...let's toggle the .dark-theme class on the body
-        document.documentElement.classList.toggle("itech-dark");
-        document.documentElement.querySelector("#itechid_dark .itech-dlw a.itech-sun").classList.remove("itech-active");
-        document.documentElement.querySelector("#itechid_dark").classList.toggle("itech-darkmode");
-        document.documentElement.querySelector("#itechid_dark .itech-dlw a.itech-moon").classList.toggle("itech-active");
+        document.documentElement.classList.toggle("bitsecure-dark");
+        document.documentElement.querySelector("#bitsecureid_dark .bitsecure-dlw a.bitsecure-sun").classList.remove("bitsecure-active");
+        document.documentElement.querySelector("#bitsecureid_dark").classList.toggle("bitsecure-darkmode");
+        document.documentElement.querySelector("#bitsecureid_dark .bitsecure-dlw a.bitsecure-moon").classList.toggle("bitsecure-active");
         // Otherwise, if the user's preference in localStorage is light...
-    } else if (itechdm == "true") {
+    } else if (bitsecuredm == "true") {
         // ...let's toggle the .dark-theme class on the body
-        //document.documentElement.classList.toggle("itech-dark");
-        document.documentElement.querySelector("#itechid_dark .itech-dlw a.itech-sun").classList.remove("itech-active");
-        document.documentElement.querySelector("#itechid_dark").classList.toggle("itech-darkmode");
-        document.documentElement.querySelector("#itechid_dark .itech-dlw a.itech-moon").classList.toggle("itech-active");
+        //document.documentElement.classList.toggle("bitsecure-dark");
+        document.documentElement.querySelector("#bitsecureid_dark .bitsecure-dlw a.bitsecure-sun").classList.remove("bitsecure-active");
+        document.documentElement.querySelector("#bitsecureid_dark").classList.toggle("bitsecure-darkmode");
+        document.documentElement.querySelector("#bitsecureid_dark .bitsecure-dlw a.bitsecure-moon").classList.toggle("bitsecure-active");
         // Otherwise, if the user's preference in localStorage is light...
     } else {
-        document.documentElement.classList.remove("itech-dark");
-        document.documentElement.querySelector("#itechid_dark .itech-dlw a.itech-sun").classList.add("itech-active");
-        document.documentElement.querySelector("#itechid_dark").classList.remove("itech-darkmode");
-        document.documentElement.querySelector("#itechid_dark .itech-dlw a.itech-moon").classList.remove("itech-active");
+        document.documentElement.classList.remove("bitsecure-dark");
+        document.documentElement.querySelector("#bitsecureid_dark .bitsecure-dlw a.bitsecure-sun").classList.add("bitsecure-active");
+        document.documentElement.querySelector("#bitsecureid_dark").classList.remove("bitsecure-darkmode");
+        document.documentElement.querySelector("#bitsecureid_dark .bitsecure-dlw a.bitsecure-moon").classList.remove("bitsecure-active");
     }
 
     var theme = currentTheme;
     // Toggle button
-    var darkmodeElement = $("#itechid_dark");
+    var darkmodeElement = $("#bitsecureid_dark");
 
     // Dark
-    darkmodeElement.children(".itech-dlw").find("a.itech-moon").on("click", function(event) {
+    darkmodeElement.children(".bitsecure-dlw").find("a.bitsecure-moon").on("click", function(event) {
         var thisby = $(this);
         var body = thisby.closest("html");
-        if (!thisby.hasClass("itech-active") && (!body.hasClass("itech-dark"))) {
-            thisby.toggleClass("itech-active");
-            thisby.closest(darkmodeElement).toggleClass("itech-darkmode");
-            thisby.siblings("a.itech-sun").removeClass("itech-active");
-            thisby.closest("html").toggleClass("itech-dark");
+        if (!thisby.hasClass("bitsecure-active") && (!body.hasClass("bitsecure-dark"))) {
+            thisby.toggleClass("bitsecure-active");
+            thisby.closest(darkmodeElement).toggleClass("bitsecure-darkmode");
+            thisby.siblings("a.bitsecure-sun").removeClass("bitsecure-active");
+            thisby.closest("html").toggleClass("bitsecure-dark");
         }
-        createCookie("itech-dark-mode", "true");
-        theme = document.documentElement.classList.contains("itech-dark") ? "dark" : "light";
+        createCookie("bitsecure-dark-mode", "true");
+        theme = document.documentElement.classList.contains("bitsecure-dark") ? "dark" : "light";
         //console.log(theme);
     });
 
     // Light
-    darkmodeElement.children(".itech-dlw").find("a.itech-sun").on("click", function(event) {
+    darkmodeElement.children(".bitsecure-dlw").find("a.bitsecure-sun").on("click", function(event) {
         var thisby = $(this);
         var body = thisby.closest("html");
-        if (!thisby.hasClass("itech-active") && (body.hasClass("itech-dark"))) {
-            thisby.toggleClass("itech-active");
-            thisby.closest(darkmodeElement).removeClass("itech-darkmode");
-            thisby.siblings("a.itech-moon").removeClass("itech-active");
-            thisby.closest("html").removeClass("itech-dark");
+        if (!thisby.hasClass("bitsecure-active") && (body.hasClass("bitsecure-dark"))) {
+            thisby.toggleClass("bitsecure-active");
+            thisby.closest(darkmodeElement).removeClass("bitsecure-darkmode");
+            thisby.siblings("a.bitsecure-moon").removeClass("bitsecure-active");
+            thisby.closest("html").removeClass("bitsecure-dark");
         }
-        createCookie("itech-dark-mode", "false");
-        theme = document.documentElement.classList.contains("itech-dark") ? "dark" : "light";
+        createCookie("bitsecure-dark-mode", "false");
+        theme = document.documentElement.classList.contains("bitsecure-dark") ? "dark" : "light";
         //console.log(theme);
     });
 
