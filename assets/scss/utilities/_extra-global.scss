@@ -1,0 +1,285 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 100 version
+*/
+
+
+/* Flash animation */
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: .4
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes flash {
+    0% {
+        opacity: .4
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes flash {
+    0% {
+        opacity: .4
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: .4
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+
+/* Custom scrollbar - y */
+
+.itechout-kb6::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px $color-white; */
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    background-color: transparent;
+}
+
+.itechout-kb6::-webkit-scrollbar {
+    width: 7px;
+    background-color: transparent;
+    &:hover {
+        background-color: var(--color-bblock);
+    }
+}
+
+.itechout-kb6::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: var(--color-bblock);
+}
+
+
+/* Custom scrollbar - x */
+
+.itechout-0zo::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px $color-white; */
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    background-color: transparent;
+}
+
+.itechout-0zo::-webkit-scrollbar {
+    height: 7px;
+    background-color: transparent;
+    &:hover {
+        background-color: var(--color-bblock);
+    }
+}
+
+.itechout-0zo::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: var(--color-bblock);
+}
+
+
+/* Custom scrollbar - y --- smaller */
+
+.itechout-kb7::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px $color-white; */
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.itechout-kb7::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+    &:hover {
+        background-color: var(--color-bblock);
+    }
+}
+
+.itechout-kb7::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, .3);
+    background-color: var(--color-bblock);
+}
+
+
+/* Header fixed animation */
+
+@-webkit-keyframes itech_fixed {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-moz-keyframes itech_fixed {
+    0% {
+        -moz-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    to {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-o-keyframes itech_fixed {
+    0% {
+        -o-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    to {
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes itech_fixed {
+    0% {
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    to {
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes itech_hits {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes itech_hits {
+    0% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes itech_hits {
+    0% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes itech_hits {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes flipInY {
+    0% {
+        -webkit-transform: perspective(400px) rotateY( 90deg);
+        transform: perspective(400px) rotateY( 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        -webkit-transform: perspective(400px) rotateY( -20deg);
+        transform: perspective(400px) rotateY( -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    60% {
+        -webkit-transform: perspective(400px) rotateY( 10deg);
+        transform: perspective(400px) rotateY( 10deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: perspective(400px) rotateY( -5deg);
+        transform: perspective(400px) rotateY( -5deg);
+    }
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+
+/* hide the built-in IE10+ clear field icon */
+
+.itech-removexion::-ms-clear {
+    display: none;
+}
+
+
+/* hide the built-in chrome clear field icon */
+
+.itech-removexion::-webkit-search-decoration,
+.itech-removexion::-webkit-search-cancel-button,
+.itech-removexion::-webkit-search-results-button,
+.itech-removexion::-webkit-search-results-decoration {
+    display: none;
+}
+
+option:disabled {
+    color: $color-instagram;
+}
+
+
+/* Plugin close button */
+
+.iv-fullscreen-close {
+    opacity: 0.5;
+    &:hover {
+        opacity: 0.75;
+    }
+}
+
+.itech-gbw {
+    -webkit-box-shadow: 0 2px 3px -2px rgba(0, 0, 0, .15);
+    -moz-box-shadow: 0 2px 3px -2px rgba(0, 0, 0, .15);
+    box-shadow: 0 2px 3px -2px rgba(0, 0, 0, .15);
+}

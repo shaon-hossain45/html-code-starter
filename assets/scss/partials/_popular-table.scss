@@ -1,0 +1,79 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 100 version
+*/
+
+
+/* iTechPublic table start */
+
+.itechpin-zs0 {
+    .itech-dis {
+        background-color: var(--color-ablock);
+        border-width: 1px;
+        border-color: var(--color-bblock);
+        -webkit-box-shadow: 0 2px 3px -2px rgba(0, 0, 0, .15);
+        -moz-box-shadow: 0 2px 3px -2px rgba(0, 0, 0, .15);
+        box-shadow: 0 2px 3px -2px rgba(0, 0, 0, .15);
+        -webkit-border-radius: 0.25rem;
+        -moz-border-radius: 0.25rem;
+        border-radius: 0.25rem;
+        margin-bottom: 1.5rem;
+    }
+    .table-responsive {
+        .table {
+            margin-bottom: 0 !important;
+            font-size: 16px;
+            color: var(--color-fwhablack);
+            &.table-striped tbody tr:nth-of-type(odd) {
+                background-color: var(--color-webback);
+            }
+            tbody td,
+            tbody th {
+                border-top: 0px none;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+            tbody th {
+                font-weight: 700;
+            }
+            tbody td {
+                font-weight: 500;
+            }
+            thead {
+                th {
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    border-top: 0px none;
+                    border-bottom: 0px none;
+                    width: 70%;
+                    font-weight: 700;
+                }
+                tr {
+                    color: $color-white;
+                    background-color: var(--color-silblock);
+                }
+            }
+            tbody {
+                font-size: 15px;
+                a {
+                    text-decoration: none;
+                    color: var(--color-fb2wha);
+                    display: inline-block;
+                    position: relative;
+                    -webkit-transition: all 0.15s;
+                    -o-transition: all 0.15s;
+                    -moz-transition: all 0.15s;
+                    transition: all 0.15s;
+                    &:hover {
+                        color: var(--color-active);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* iTechPublic table end */

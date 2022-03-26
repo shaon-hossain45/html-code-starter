@@ -1,0 +1,118 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 100 version
+*/
+
+
+/* iTechPublic brand start */
+
+.itechsec-qyl {
+    height: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    @include breakpoint($small-max) {
+        padding-top: 3rem;
+    }
+}
+
+.itechpart-faj {
+    .itech-9wf:not(:last-child) {
+        margin-bottom: 0.5rem;
+    }
+    &.itechout-kib {
+        margin-bottom: 2.5rem;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -1rem;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+            left: 50%;
+            width: 70%;
+            height: 1px;
+            background-color: var(--color-bblock);
+        }
+    }
+    a {
+        text-decoration: none;
+        -webkit-border-radius: 0.25rem;
+        -moz-border-radius: 0.25rem;
+        border-radius: 0.25rem;
+        background-color: var(--color-ablock);
+        -webkit-box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.15);
+        border: 1px solid var(--color-bblock);
+        color: var(--color-fb2wha);
+        font-weight: 500;
+        -webkit-transition: all 0.15s;
+        -o-transition: all 0.15s;
+        -moz-transition: all 0.15s;
+        transition: all 0.15s;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            left: 0;
+            width: 1px;
+            height: 70%;
+            opacity: 0;
+            display: none;
+            background-color: transparent;
+            -webkit-transition: all 0.15s;
+            -o-transition: all 0.15s;
+            -moz-transition: all 0.15s;
+            transition: all 0.15s;
+        }
+        &:hover {
+            color: var(--color-active);
+            &::before {
+                background-color: var(--color-active);
+                opacity: 1;
+                display: block;
+            }
+        }
+    }
+    img.img-fit {
+        -o-object-fit: cover;
+        object-fit: cover;
+        max-height: 50px;
+    }
+    .itechpin-row {
+        min-height: 38px;
+    }
+    .itechpin-kwf {
+        padding-left: 1rem;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            left: 0.5rem;
+            width: 1px;
+            background-color: var(--color-bblock);
+            height: 25px;
+        }
+    }
+}
+
+
+/* iTechPublic brand end */

@@ -1,0 +1,39 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 100 version
+*/
+
+$extra-small-phone-only: '(min-width: 320px) and (max-width: 375px)';
+$extra-small-phone-only2: '(min-width: 376px) and (max-width: 479px)';
+$extra-small-phone-only3: '(min-width: 480px) and (max-width: 575px)';
+$extra-small-phone-min: '(min-width: 480px)';
+$extra-small-phone-max: '(max-width: 479px)';
+$extra-small-phone: '(max-width: 575px)';
+$extra-small-min: '(min-width: 576px)';
+$extra-small-max: '(max-width: 767px)';
+
+/* Extra breakpoint */
+
+$extra-small-only: '(min-width: 576px) and (max-width: 767px)';
+$extra-medium-only: '(min-width: 576px) and (max-width: 991px)';
+$small-min: '(min-width: 768px)';
+$small-max: '(max-width: 991px)';
+$small-only: '(min-width: 768px) and (max-width: 991px)';
+$medium-min: '(min-width: 992px)';
+$medium-max: '(max-width: 1199px)';
+$medium-only: '(min-width: 992px) and (max-width: 1199px)';
+$large-min: '(min-width: 1200px)';
+
+/* Extra breakpoint */
+
+$extra-large-min: '(min-width: 1400px)';
+
+/*
+@media only screen and (min-width : 1400px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+*/

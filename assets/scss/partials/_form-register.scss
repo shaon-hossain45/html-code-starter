@@ -1,0 +1,27 @@
+/* iTechPublic signup form start */
+
+form {
+    .form-row {
+        .itech-label {
+            color: var(--color-fbwhite);
+            font-weight: 600;
+            .itech-alert {
+                color: $color-instagram;
+            }
+        }
+    }
+    .itech-ple {
+        label {
+            margin-top: 0.45rem;
+        }
+        .custom-select {
+            color: var(--color-fwhablack);
+            &.itech-error {
+                border-color: $color-instagram;
+            }
+        }
+    }
+}
+
+
+/* iTechPublic signup form end */

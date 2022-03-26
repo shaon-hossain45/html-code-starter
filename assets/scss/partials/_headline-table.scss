@@ -1,0 +1,83 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 100 version
+*/
+
+
+/* Global super part start */
+
+.itechspl-uz2 {
+    color: var(--color-fbwhite);
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80px;
+        height: 2px;
+        background-color: var(--color-active);
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 42px;
+        margin-bottom: 0;
+        span {
+            margin-right: 0.25rem;
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+
+/* Global super part end */
+
+
+/* Global super part start */
+
+.itechspl-urk {
+    &.itechout-aef {
+        z-index: 1;
+    }
+    .table-responsive {
+        border: 1px solid var(--color-bblock);
+        -webkit-border-radius: 0.1875rem;
+        -moz-border-radius: 0.1875rem;
+        border-radius: 0.1875rem;
+        margin-bottom: .5rem;
+        overflow-y: hidden;
+        .table {
+            margin-bottom: 0 !important;
+            font-size: 14px;
+            color: var(--color-fwhablack);
+            tbody td:not(.itech-active) {
+                font-size: 13px;
+                font-weight: 500;
+            }
+            tbody td {
+                border-top-color: var(--color-bblock) !important;
+                padding: 0.2rem 0.5rem;
+                -webkit-transition: all 0.15s;
+                -o-transition: all 0.15s;
+                -moz-transition: all 0.15s;
+                transition: all 0.15s;
+                vertical-align: middle;
+                i.fa-check-circle {
+                    color: var(--color-active);
+                }
+                i.fa-times-circle {
+                    color: $color-instagram;
+                }
+            }
+            tbody td.itech-active {
+                width: 25%;
+                background-color: var(--color-bblock);
+                color: var(--color-fb2wha);
+            }
+        }
+    }
+}
+
+
+/* Global super part end */

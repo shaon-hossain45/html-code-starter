@@ -1,0 +1,234 @@
+/* iTechPublic card start */
+
+.itechpart-jyr {
+    background-color: var(--color-ablock);
+    border-width: 1px;
+    border-color: var(--color-bblock);
+    -webkit-box-shadow: 0 2px 3px -2px rgba(0, 0, 0, .15);
+    -moz-box-shadow: 0 2px 3px -2px rgba(0, 0, 0, .15);
+    box-shadow: 0 2px 3px -2px rgba(0, 0, 0, .15);
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    border-radius: 0.25rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    @include breakpoint($extra-small-only) {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    @include breakpoint($extra-small-phone) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    @include breakpoint($extra-small-phone-only) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    /* iTechPublic user part start */
+    .itechpin-qj5 {
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 60%;
+            height: 1px;
+            background-color: var(--color-bblock);
+            bottom: 0px;
+        }
+        span.itech-icon {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: -moz-box;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            -moz-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            -moz-box-align: center;
+            align-items: center;
+            width: 90px;
+            height: 90px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            background-color: var(--color-fbwhite);
+            i {
+                font-size: 2rem;
+                color: var(--color-fwhblack);
+            }
+        }
+        h4 {
+            color: var(--color-fbwhite);
+            text-transform: uppercase;
+            font-weight: 600;
+            line-height: 2;
+        }
+    }
+    /* iTechPublic user part end */
+    /* iTechPublic extra part start */
+    .itechpart-qiz {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        span {
+            color: var(--color-fwhablack);
+        }
+        a {
+            text-decoration: none;
+            margin-left: 0.1875rem;
+            -webkit-transition: all 0.15s;
+            -o-transition: all 0.15s;
+            -moz-transition: all 0.15s;
+            transition: all 0.15s;
+            color: var(--color-fb2wha);
+            font-weight: 500;
+            &:hover {
+                color: var(--color-active);
+            }
+        }
+    }
+    /* iTechPublic extra part end */
+    .itech-fxy {
+        padding-bottom: 1.5rem;
+        button[type="submit"] {
+            width: 100%;
+            background-color: var(--color-fbwhite);
+            border: 1px solid var(--color-bblock);
+            color: var(--color-fwhblack);
+            font-weight: 500;
+        }
+    }
+}
+
+form.itechout-klh {
+    margin-top: 4rem;
+    input.itech-error,
+    textarea.itech-error {
+        border-color: $color-instagram;
+    }
+    input+span.itech-error,
+    textarea+span.itech-error {
+        color: $color-instagram;
+        font-size: 15px;
+    }
+    .form-group {
+        margin-bottom: 2rem;
+        >label {
+            color: var(--color-fbwhite);
+            font-weight: 600;
+            .itech-alert {
+                color: $color-instagram;
+            }
+        }
+        input.itechout-dzv {
+            padding-right: 2rem;
+            +span.itech-eyeicon::before {
+                font-weight: 600;
+                content: "\f070";
+                font-family: "Font Awesome 5 Free";
+                position: absolute;
+                right: .75rem;
+                top: 39px;
+                color: var(--color-fwhablack);
+                z-index: 2;
+                cursor: pointer;
+            }
+            +span.itech-active.itech-eyeicon::before {
+                content: "\f06e";
+            }
+        }
+        //Microsoft edge eye icon hide
+        input::-ms-reveal,
+        input::-ms-clear {
+            display: none;
+        }
+    }
+    .custom-control {
+        &.custom-checkbox {
+            .custom-control-label::before {
+                -webkit-border-radius: 0.125rem;
+                -moz-border-radius: 0.125rem;
+                border-radius: 0.125rem;
+                border-color: var(--color-fwhablack);
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+            }
+            input[type="checkbox"]:checked~.custom-control-label::before {
+                background-color: $color-black;
+                border-color: var(--color-bblock);
+            }
+            .custom-control-label.itech-error::before {
+                border-color: $color-instagram;
+            }
+        }
+        input,
+        label {
+            font-weight: 500;
+            color: var(--color-fwhablack);
+            cursor: pointer;
+            .itech-alert {
+                color: $color-instagram;
+            }
+        }
+    }
+}
+
+
+/* iTechPublic error fixed start */
+
+.itechpart-uj2 {
+    margin-top: 4rem;
+    .itech-zpu {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border-top: 1px solid $color-instagram;
+        border-bottom: 1px solid $color-instagram;
+    }
+    span {
+        color: $color-instagram;
+        text-align: center;
+    }
+    &.itechout-bgk {
+        display: none;
+        &.itech-active {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+    }
+}
+
+
+/* iTechPublic error fixed end */
+
+
+/* iTechPublic card end */

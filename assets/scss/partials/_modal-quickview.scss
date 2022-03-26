@@ -1,0 +1,125 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 100 version
+*/
+
+
+/* Global quick view modal start */
+
+.itechsec-pb6 {
+    .modal-lg-custom {
+        max-width: 930px;
+    }
+    .modal-content {
+        -webkit-border-radius: 0.25rem;
+        -moz-border-radius: 0.25rem;
+        border-radius: 0.25rem;
+        border-color: var(--color-bblock);
+        -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+        min-height: 554px;
+        background-color: var(--color-fwhblack);
+        span.spinner-grow {
+            position: absolute;
+            left: calc(50% - 1rem);
+            top: calc(50% - 1rem);
+        }
+    }
+    .modal-body {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .itechout-kb6 {
+        height: auto;
+        max-height: 480px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding-right: 0.25rem;
+        &:hover {
+            overflow-y: scroll;
+        }
+    }
+    @include breakpoint($small-max) {
+        .itechpin-kco {
+            margin-top: 0 !important;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.itechpin-e8k {
+    button.close {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 10px;
+        top: 10px;
+        padding: 10px;
+        text-align: center;
+        overflow: hidden;
+        -webkit-transition: all ease 0.15s;
+        -o-transition: all ease 0.15s;
+        -moz-transition: all ease 0.15s;
+        transition: all ease 0.15s;
+        z-index: 1;
+        @include breakpoint($extra-small-max) {
+            top: 50%;
+            right: unset;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--color-fbwhite);
+            border-radius: 2px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: 1px solid var(--color-fbwhite);
+            -webkit-box-shadow: 0 2px 3px -2px rgba(0, 0, 0, .15);
+            -moz-box-shadow: 0 2px 3px -2px rgba(0, 0, 0, .15);
+            box-shadow: 0 2px 3px -2px rgba(0, 0, 0, .15);
+        }
+    }
+    button.close:before {
+        -webkit-transform: translate(-50%, -50%) rotate( 45deg);
+        -moz-transform: translate(-50%, -50%) rotate( 45deg);
+        -ms-transform: translate(-50%, -50%) rotate( 45deg);
+        -o-transform: translate(-50%, -50%) rotate( 45deg);
+        transform: translate(-50%, -50%) rotate( 45deg);
+    }
+    button.close:after {
+        -webkit-transform: translate(-50%, -50%) rotate( -45deg);
+        -moz-transform: translate(-50%, -50%) rotate( -45deg);
+        -ms-transform: translate(-50%, -50%) rotate( -45deg);
+        -o-transform: translate(-50%, -50%) rotate( -45deg);
+        transform: translate(-50%, -50%) rotate( -45deg);
+    }
+    button.close:after,
+    button.close:before {
+        content: "";
+        height: 4px;
+        width: 24px;
+        background-color: $color-white;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        left: 50%;
+    }
+    button.close:hover {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+}
+
+
+/* Global quick view modal end */

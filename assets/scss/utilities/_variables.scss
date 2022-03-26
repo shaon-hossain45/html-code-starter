@@ -1,0 +1,100 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 100 version
+*/
+
+:root,
+ :root.itech-light {
+    //web back
+    --color-webback: #f0f2f5;
+    //1st block
+    --color-ablock: #fff;
+    //2nd block
+    --color-abblock: #fff;
+    //block border
+    --color-bblock: #dddfe2;
+    --color-silblock: #d1d8e0;
+    --color-sucmsg: #f0f2f5;
+    //font color
+    --color-fwhablack: #8492A6;
+    --color-fb2wha: #000;
+    //font headline
+    --color-fbwhite: #000;
+    //font headline white to black
+    --color-fwhblack: #fff;
+    //soft
+    --color-softbor: rgba(221, 223, 226, 0.4);
+    //white soft
+    --color-whitesoftb: #f6f6f7;
+    //active
+    --color-active: #21c87a;
+}
+
+:root.itech-dark {
+    //web back
+    --color-webback: #18191a;
+    //1st block
+    --color-ablock: #242526;
+    //2nd block
+    --color-abblock: rgba(255, 255, 255, 0.1);
+    //3rd border
+    --color-bblock: rgba(255, 255, 255, 0.1);
+    --color-silblock: rgba(255, 255, 255, 0.1);
+    --color-sucmsg: #18191a;
+    //font color
+    --color-fwhablack: #b0b3b8;
+    --color-fb2wha: #e4e6eb;
+    //font headline
+    --color-fbwhite: #fff;
+    //font headline white to black
+    --color-fwhblack: #000;
+    //soft
+    --color-softbor: rgba(221, 223, 226, 0.1);
+    //white soft
+    --color-whitesoftb: #1b1b1c;
+    //active
+    --color-active: #fff;
+}
+
+$color-active: #21c87a;
+$color-backcolor: #8492A6;
+$color-semiwhite: #e4e6eb;
+$color-dark: #1f2024;
+$color-white: #fff;
+$color-black: #000;
+//////
+////
+///////
+///////////
+///////////
+$color-rgbawhitesoft: rgba(255, 255, 255, 0.5);
+//
+$color-semidark: rgba(51, 51, 51, 1);
+$color-softdark: #313131;
+//$color-bluesoft: #64778c;
+$color-silver2: #f5f8fa;
+$color-silverhash: #b7b7b7;
+$color-blue: rgba(0, 115, 210, 1);
+
+/* Dark Mode */
+
+// font
+// $color-dcolor: #b0b3b8;
+// block text -3rd
+// $color-sdcolor: #e4e6eb;
+
+/* Social Parts */
+
+$color-facebook: #3b5998;
+$color-twitter: #00aced;
+$color-instagram: #ea2c59;
+$color-pinterest: #cb2027;
+$color-linkedin: #007bb6;
+$color-youtube: #c4302b;
+$color-google: #dd4b39;
+
+/* Color Shop */
+
+//dark blue #16163f
