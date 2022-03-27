@@ -9,9 +9,11 @@
     background-color: transparent;
     z-index: 9 !important;
     width: 100%;
-    position: fixed;
-    top: 0px;
-    border-bottom: 1px solid #efefef;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid #8f8f8f85;
     .bitsecurepart-8ki {
         min-height: 100px;
         justify-content: center;
@@ -50,6 +52,10 @@
                                     display: block;
                                     opacity: 1;
                                     margin-top: 0;
+                                }
+                                a::before {
+                                    width: 100%;
+                                    opacity: 1;
                                 }
                             }
                             >a {
@@ -178,6 +184,8 @@
                     flex-wrap: nowrap;
                     align-items: center;
                     .h-btn-search {
+                        cursor: pointer;
+                        padding: 20px 5px;
                         margin-left: 15px;
                         display: flex;
                         line-height: 99px;
@@ -190,6 +198,21 @@
                         position: relative;
                         i {
                             color: #fff;
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            right: -10px;
+                            top: 50%;
+                            width: 1px;
+                            height: 70%;
+                            background-color: #fff;
+                            -webkit-transform: translate(0, -50%);
+                            -khtml-transform: translate(0, -50%);
+                            -moz-transform: translate(0, -50%);
+                            -ms-transform: translate(0, -50%);
+                            -o-transform: translate(0, -50%);
+                            transform: translate(0, -50%);
                         }
                     }
                     .bits-jll {

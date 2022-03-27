@@ -78,18 +78,19 @@
      * @return {[type]}   [description]
      */
     $(function() {
-        $("#bitsecureid_4xl, #bitsecureid_v4a").on("click", function(event) {
+        $("#bitsecureid_1fc").on("click", function(event) {
             event.stopPropagation();
 
             var thisby = $(this);
-            var navdropdown = $(".bitsecureout-mrp");
+            //var navdropdown = $(".bitsecureout-mrp");
             var form = $("form#bitsecureid_ohk");
-            var searchsec = $(".bitsecuresec-hud");
-            var seacrhcon = $(".bitsecuresec-hud .bitsecure-pxb");
-            var searchclose = $("#bitsecureid_yqr");
-            searchclose.addClass("bitsecure-active");
-            form[0].reset();
-            navdropdown.removeClass("bitsecure-active");
+            var searchsec = $(".cms-modal-search");
+            var seacrhcon = $(".cms-modal-content");
+            //var searchclose = $("#bitsecureid_yqr");
+
+            //searchclose.addClass("bitsecure-active");
+            //form[0].reset();
+            //navdropdown.removeClass("bitsecure-active");
             thisby.closest("body").toggleClass("bitsecurescr-vbn");
             searchsec.toggleClass("bitsecure-active");
 
@@ -99,10 +100,10 @@
             });
 
             // Close search modal
-            $("body,#bitsecureid_k6m").click(function() {
-                $("body").removeClass("bitsecurescr-vbn");
+            $("body,.cms-modal-search").click(function() {
+                //$("body").removeClass("bitsecurescr-vbn");
                 searchsec.removeClass("bitsecure-active");
-                searchclose.removeClass("bitsecure-active");
+                //searchclose.removeClass("bitsecure-active");
                 form[0].reset();
             });
 
@@ -235,10 +236,13 @@
             items: 1,
             nav: true,
             dots: true,
+            animateOut: 'fadeOut',
             autoplay: true,
             autoplayTimeout: 3000,
             autoplayHoverPause: true,
             responsiveClass: true,
+            smartSpeed: 1000,
+            //fluidSpeed: 5,
             // responsive: {
             //     0: {
             //         items: 1,

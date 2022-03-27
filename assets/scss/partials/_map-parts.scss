@@ -4,8 +4,10 @@
     .card {
         padding-top: 20px;
         align-items: center;
-        box-shadow: 0 0 4px #efefef;
+        border: 1px solid #39c;
+        border-radius: 3px;
         background-color: #39c;
+        box-shadow: 0px 7px 10px -5px #39c;
         span i {
             color: #ed7d31;
             font-size: 45px;
