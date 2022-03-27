@@ -154,72 +154,6 @@
     });
 
     /**
-     * Compare modal
-     * @param  {[type]}   [description]
-     * @return {[type]}   [description]
-     */
-    $(function() {
-        var modalWrap = $("#bitsecureid_grt");
-        var closeElement = $("#bitsecureid_vrc");
-        var balanceElement = $("#bitsecureid_wco");
-        var compareButton = $("#bitsecureid_5gv");
-
-        $(".bitsecurespl-cxz input[type='checkbox'],.bitsecurespl-z9b input[type='checkbox']").change(function() {
-            // Modal open
-            if ($(this).is(":checked")) {
-                if (!modalWrap.hasClass("bitsecure-active")) {
-                    modalWrap.addClass("bitsecure-active");
-                    closeElement.addClass("bitsecure-active");
-                }
-            }
-        });
-        // Close button
-        closeElement.on("click", function(event) {
-            var thisby = $(this);
-            thisby.removeClass("bitsecure-active");
-            thisby.closest("body").find(".bitsecuresec-vyc").removeClass("bitsecure-active");
-        });
-
-        var liLength = modalWrap.find("ul").children().length;
-
-        if (liLength > 0) {
-            balanceElement.addClass("bitsecure-active");
-        }
-        if (liLength > 3) {
-            compareButton.closest(".bitsecureout-2v9").children(".bitsecure-alert").addClass("bitsecure-active");
-        }
-        // Balance button
-        balanceElement.on("click", function(event) {
-            modalWrap.toggleClass("bitsecure-active");
-            closeElement.toggleClass("bitsecure-active");
-        });
-    });
-
-    /**
-     * Popular tab setting active class adjust
-     * @param  {[type]}     [description]
-     * @return {[type]}     [description]
-     */
-    $(function() {
-        var current = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search;
-        var semi_current = window.location.pathname + window.location.search;
-        $("#bitsecureid_low li a").each(function() {
-            var $this = $(this);
-            // if the current path is like this link, make it active
-            if (($this.attr("href") == current) || ($this.attr("href") == semi_current)) {
-                $this.parent("li").addClass("bitsecure-active");
-            }
-        });
-        $(".bitsecurepin-zju a").each(function() {
-            var $this = $(this);
-            // if the current path is like this link, make it active
-            if (($this.attr("href") == current) || ($this.attr("href") == semi_current)) {
-                $this.addClass("bitsecure-active");
-            }
-        })
-    });
-
-    /**
      * Dropdown navmore button & extra button
      * @param  {[type]}   [description]
      * @return {[type]}   [description]
@@ -294,13 +228,33 @@
         }).trigger("change");
     });
 
-    /**
-     * Compare reset button popover
-     * @param  {String}   [description]
-     * @return {[type]}   [description]
-     */
-    $(function() {
-        $("button.bitsecurepart-fux[data-toggle='popover']").popover();
+    $(document).ready(function() {
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            //margin: 10,
+            items: 1,
+            nav: true,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            // responsive: {
+            //     0: {
+            //         items: 1,
+            //         nav: true
+            //     },
+            //     600: {
+            //         items: 2,
+            //         nav: false
+            //     },
+            //     1000: {
+            //         items: 3,
+            //         nav: true,
+            //         loop: false
+            //     }
+            // }
+        });
     });
 
 })(jQuery, window, document);

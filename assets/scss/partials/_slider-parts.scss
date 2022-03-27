@@ -1,0 +1,122 @@
+.bitsecuresec-hyx {
+    .bitsecurepart-a1k {
+        padding-top: 350px;
+        padding-bottom: 250px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .bits-sps {
+            h4 {
+                color: #fff;
+                font-size: 45px;
+                font-weight: 700;
+            }
+            p {
+                font-size: 20px;
+                font-weight: 500;
+                color: #fff;
+            }
+            a {
+                text-transform: uppercase;
+                padding: 0 30px;
+                background-color: #39c;
+                line-height: 60px;
+                font-size: 18px;
+                font-weight: 700;
+                color: #fff;
+                border-radius: 4px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                transition: all 0.5s;
+                width: 200px;
+            }
+            a.button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+            a.button span:after {
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                content: "\f105";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+            a.button:hover span {
+                padding-right: 25px;
+            }
+            a.button:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+        }
+    }
+    .owl-nav button {
+        text-align: center;
+        opacity: 0.75;
+        transition: all 0.35;
+        &:hover {
+            opacity: 1;
+            color: #fff;
+        }
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+        background: transparent;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+        padding: 0 5px 15px 5px !important;
+        display: block;
+        font-size: 90px;
+        border-radius: 4px;
+        // box-shadow: 3px 14px 25px -10px #92b4d0;
+        transition: background 0.5s ease 0s;
+    }
+    .owl-carousel .owl-nav button.owl-next {
+        background: transparent;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15px;
+        padding: 0 5px 15px 5px !important;
+        display: block;
+        font-size: 90px;
+        border-radius: 4px;
+        // box-shadow: -3px 14px 25px -10px #92b4d0;
+        transition: background 0.5s ease 0s;
+    }
+    .owl-carousel .owl-dots {
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 15px;
+    }
+    .owl-carousel button.owl-dot {
+        height: 8px;
+        width: 8px;
+        -webkit-border-radius: 2px;
+        -khtml-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+        border-radius: 2px;
+        background: transparent;
+        border: 8px solid #fff;
+        margin: 4px;
+        &.active {
+            border-color: #39c;
+        }
+    }
+}
