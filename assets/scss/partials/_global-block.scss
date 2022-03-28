@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 100 version
+*/
+
 .bitspin-arj {
     justify-content: center;
     align-items: center;
@@ -5,20 +12,20 @@
         h5 {
             font-size: 14px;
             font-weight: 700;
-            color: #39c;
+            color: var(--color-priority);
             margin-bottom: 9px;
         }
     }
     .bits-ysw {
         h2 {
-            color: #000;
+            color: $color-black;
             margin-bottom: 1.5rem;
         }
-        span {
+        span.bitspix-abc {
             display: inline-block;
             width: 40px;
             height: 3px;
-            background-color: #39c;
+            background-color: var(--color-priority);
             vertical-align: top;
         }
     }
@@ -74,19 +81,19 @@
     height: 60px;
     padding-left: 20px;
     padding-right: 20px;
-    color: #fff;
+    color: var(--color-fwhvblack);
     font-size: 25px;
     font-weight: 600;
     width: 100%;
     &:focus {
         outline: 0;
-        border-color: #39c;
+        border-color: var(--color-priority);
     }
 }
 
 .cms-modal-search .search-submit {
     font-size: 28px;
-    color: #39c;
+    color: var(--color-priority);
     background-color: transparent;
     border: none;
     padding: 0;
@@ -100,13 +107,13 @@
 }
 
 .searchform-wrap {
-    border: 1px solid #39c;
+    border: 1px solid var(--color-priority);
     border-radius: 2px;
     position: relative;
 }
 
 .cms-modal .cms-modal-content {
-    padding: 40px 0;
+    padding: 0px;
     max-width: 650px;
     margin: auto;
     position: absolute;
@@ -120,3 +127,72 @@
     left: 0;
     right: 0;
 }
+
+
+/* Custom scrollbar - y */
+
+// .bitsecureout-kb6::-webkit-scrollbar-track {
+//     /* -webkit-box-shadow: inset 0 0 6px $color-white; */
+//     -webkit-border-radius: 7px;
+//     border-radius: 7px;
+//     background-color: transparent;
+// }
+// .bitsecureout-kb6::-webkit-scrollbar {
+//     width: 7px;
+//     background-color: transparent;
+//     &:hover {
+//         background-color: var(--color-bblock);
+//     }
+// }
+// .bitsecureout-kb6::-webkit-scrollbar-thumb {
+//     -webkit-border-radius: 10px;
+//     border-radius: 10px;
+//     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+//     background-color: var(--color-bblock);
+// }
+
+/* Custom scrollbar - x */
+
+// .bitsecureout-0zo::-webkit-scrollbar-track {
+//     /* -webkit-box-shadow: inset 0 0 6px $color-white; */
+//     -webkit-border-radius: 7px;
+//     border-radius: 7px;
+//     background-color: transparent;
+// }
+// .bitsecureout-0zo::-webkit-scrollbar {
+//     height: 7px;
+//     background-color: transparent;
+//     &:hover {
+//         background-color: var(--color-bblock);
+//     }
+// }
+// .bitsecureout-0zo::-webkit-scrollbar-thumb {
+//     -webkit-border-radius: 10px;
+//     border-radius: 10px;
+//     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+//     background-color: var(--color-bblock);
+// }
+
+/* Custom scrollbar - y --- smaller */
+
+// .bitsecureout-kb7::-webkit-scrollbar-track {
+//     /* -webkit-box-shadow: inset 0 0 6px $color-white; */
+//     -webkit-border-radius: 4px;
+//     border-radius: 4px;
+//     background-color: transparent;
+// }
+// .bitsecureout-kb7::-webkit-scrollbar {
+//     width: 4px;
+//     background-color: transparent;
+//     &:hover {
+//         background-color: var(--color-bblock);
+//     }
+// }
+// .bitsecureout-kb7::-webkit-scrollbar-thumb {
+//     -webkit-border-radius: 10px;
+//     border-radius: 10px;
+//     -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, .3);
+//     background-color: var(--color-bblock);
+// }
+
+/* Header fixed animation */

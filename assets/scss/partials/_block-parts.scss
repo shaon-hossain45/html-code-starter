@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 100 version
+*/
+
 .bitsecuresec-8kx {
     padding-top: 114px !important;
     padding-bottom: 100px !important;
@@ -9,7 +16,7 @@
             left: -20px;
             bottom: 0;
             top: 115px;
-            background-color: #39c;
+            background-color: var(--color-priority);
             position: absolute;
             -webkit-border-radius: 1px 0 0 1px;
             -khtml-border-radius: 1px 0 0 1px;
@@ -25,7 +32,7 @@
             right: -20px;
             bottom: 115px;
             top: 0;
-            background-color: #39c;
+            background-color: var(--color-priority);
             position: absolute;
             -webkit-border-radius: 1px 0 0 1px;
             -khtml-border-radius: 1px 0 0 1px;
@@ -37,28 +44,41 @@
         }
         a {
             padding: 0 35px;
-            background-color: #39c;
+            background-color: var(--color-priority);
             line-height: 71px;
             display: inline-block;
             font-size: 14px;
             font-weight: 700;
-            color: #fff;
+            color: var(--color-fwhvblack);
             position: absolute;
             bottom: 0;
             left: 0;
+            text-decoration: none;
         }
     }
     .bitsecurepix-arj {
         >P {
             font-size: 14px;
             font-weight: 700;
-            color: #39c;
+            color: var(--color-priority);
             margin-bottom: 9px;
+        }
+        span.bitspix-abc {
+            display: inline-block;
+            width: 40px;
+            height: 3px;
+            background-color: var(--color-priority);
+            vertical-align: top;
+        }
+        article p {
+            margin-top: 1rem;
+        }
+        strong {
+            color: $color-black;
         }
         h2 {
             margin-bottom: 0px;
-            color: #000;
-            font-size: 43px;
+            color: $color-black;
             line-height: 53px;
         }
     }

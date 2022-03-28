@@ -230,12 +230,41 @@
     });
 
     $(document).ready(function() {
-        $(".owl-carousel").owlCarousel({
+        $("#bitsecureid_jfj").owlCarousel({
             loop: true,
             //margin: 10,
             items: 1,
             nav: true,
             dots: true,
+            animateOut: 'fadeOut',
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            smartSpeed: 1000,
+            //fluidSpeed: 5,
+            // responsive: {
+            //     0: {
+            //         items: 1,
+            //         nav: true
+            //     },
+            //     600: {
+            //         items: 2,
+            //         nav: false
+            //     },
+            //     1000: {
+            //         items: 3,
+            //         nav: true,
+            //         loop: false
+            //     }
+            // }
+        });
+        $("#bitsecureid_jij").owlCarousel({
+            loop: true,
+            margin: 20,
+            items: 6,
+            nav: false,
+            dots: false,
             animateOut: 'fadeOut',
             autoplay: true,
             autoplayTimeout: 3000,

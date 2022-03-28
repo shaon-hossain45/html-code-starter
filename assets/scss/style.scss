@@ -7,14 +7,11 @@
 /* Basement Files */
 
 @import 'utilities/base';
+@import 'utilities/global-utilities';
 
 /* Header parts */
 
 @import 'partials/header-parts';
-
-/* Aside parts */
-
-//@import 'partials/aside-parts';
 
 /* Extra Parts */
 
@@ -23,7 +20,10 @@
 @import 'partials/map-parts';
 @import 'partials/block-parts';
 @import 'partials/slider-parts';
-//@import 'partials/dark-mode';
+@import 'partials/brand-slider';
+@import 'partials/parallax';
+@import 'partials/column-block';
+@import 'partials/sixpack-block';
 
 /* Footer parts */
 

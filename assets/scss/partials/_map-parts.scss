@@ -1,19 +1,27 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 100 version
+*/
+
 .bitsecuresec-5nx {
-    padding-top: 114px !important;
+    background-color: $color-white;
+    padding-top: 115px !important;
     padding-bottom: 100px !important;
     .card {
         padding-top: 20px;
         align-items: center;
-        border: 1px solid #39c;
+        border: 1px solid var(--color-priority);
         border-radius: 3px;
-        background-color: #39c;
-        box-shadow: 0px 7px 10px -5px #39c;
+        background-color: var(--color-priority);
+        box-shadow: 0px 5px 15px var(--color-priority);
         span i {
             color: #ed7d31;
             font-size: 45px;
         }
         .card-body {
-            color: #fff;
+            color: var(--color-fwhvblack);
             text-align: center;
             .card-title {
                 font-size: 34px;
