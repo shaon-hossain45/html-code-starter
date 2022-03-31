@@ -1,0 +1,39 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 100 version
+*/
+
+.bitsecuresec-unx {
+    background-color: $color-white;
+    .bitsecurepart-ppk {
+        padding-top: 125px;
+        padding-bottom: 125px;
+        .bitspix-ree {
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+        .bits-wrap {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            .mpc-image.mpc-inited {
+                img {
+                    opacity: 0.75;
+                    -webkit-transition: all 300ms linear 0ms;
+                    -moz-transition: all 300ms linear 0ms;
+                    -o-transition: all 300ms linear 0ms;
+                    transition: all 300ms linear 0ms;
+                }
+                &:hover {
+                    img {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

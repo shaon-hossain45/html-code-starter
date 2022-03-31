@@ -179,7 +179,7 @@
                     // background-color: var(--color-fwhablack);
                 }
                 a {
-                    color: var(--color-fwhvblack);
+                    color: $color-white;
                     text-decoration: none;
                     position: relative;
                     font-weight: 600;
@@ -261,12 +261,12 @@
             }
         }
         .bitsecure-xd8 {
-            color: var(--color-fwhvblack);
+            color: $color-white;
             font-weight: 500;
             a {
                 display: inline-block;
                 position: relative;
-                color: var(--color-fwhvblack);
+                color: $color-white;
                 text-decoration: none;
                 cursor: pointer;
                 -webkit-transition: all 0.15s;

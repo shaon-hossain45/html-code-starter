@@ -10,7 +10,7 @@
 
 @-webkit-keyframes flash {
     0% {
-        opacity: .4
+        opacity: .75
     }
     100% {
         opacity: 1
@@ -19,7 +19,7 @@
 
 @-moz-keyframes flash {
     0% {
-        opacity: .4
+        opacity: .75
     }
     100% {
         opacity: 1
@@ -28,7 +28,7 @@
 
 @-o-keyframes flash {
     0% {
-        opacity: .4
+        opacity: .75
     }
     100% {
         opacity: 1
@@ -37,7 +37,7 @@
 
 @keyframes flash {
     0% {
-        opacity: .4
+        opacity: .75
     }
     100% {
         opacity: 1

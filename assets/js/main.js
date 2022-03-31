@@ -243,21 +243,22 @@
             responsiveClass: true,
             smartSpeed: 1000,
             //fluidSpeed: 5,
-            // responsive: {
-            //     0: {
-            //         items: 1,
-            //         nav: true
-            //     },
-            //     600: {
-            //         items: 2,
-            //         nav: false
-            //     },
-            //     1000: {
-            //         items: 3,
-            //         nav: true,
-            //         loop: false
-            //     }
-            // }
+            //autoHeight: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 1,
+                    nav: true,
+                    loop: true
+                }
+            }
         });
         $("#bitsecureid_jij").owlCarousel({
             loop: true,
@@ -272,22 +273,53 @@
             responsiveClass: true,
             smartSpeed: 1000,
             //fluidSpeed: 5,
-            // responsive: {
-            //     0: {
-            //         items: 1,
-            //         nav: true
-            //     },
-            //     600: {
-            //         items: 2,
-            //         nav: false
-            //     },
-            //     1000: {
-            //         items: 3,
-            //         nav: true,
-            //         loop: false
-            //     }
-            // }
+            //autoHeight: true,
+            responsive: {
+                0: {
+                    items: 3,
+                    nav: false
+                },
+                600: {
+                    items: 4,
+                    nav: false
+                },
+                1000: {
+                    items: 6,
+                    nav: false,
+                    loop: true
+                }
+            }
         });
+    });
+    $("#bitsecureid_hfj").owlCarousel({
+        loop: true,
+        //margin: 10,
+        items: 1,
+        nav: true,
+        dots: false,
+        animateOut: 'fadeOut',
+        //autoplay: true,
+        //autoplayTimeout: 3000,
+        //autoplayHoverPause: true,
+        responsiveClass: true,
+        smartSpeed: 1000,
+        //fluidSpeed: 5,
+        //autoHeight: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 1,
+                nav: true
+            },
+            1000: {
+                items: 1,
+                nav: true,
+                loop: true
+            }
+        }
     });
 
 })(jQuery, window, document);

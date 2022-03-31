@@ -1,7 +1,7 @@
 /*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
 * Browsers: last 100 version
 */
 
@@ -9,18 +9,29 @@
     .bitsecurepart-12k {
         padding-top: 125px;
         padding-bottom: 125px;
+        .bitspix-abr {
+            padding-top: 45px;
+            padding-bottom: 45px;
+        }
         .bitspin-8re {
             height: 100%;
             padding: 20px 15px;
             background-color: $color-white;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
             border-radius: 3px;
+            -webkit-box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.15);
             box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.15);
             -webkit-transition: all 300ms linear 0ms;
-            -khtml-transition: all 300ms linear 0ms;
             -moz-transition: all 300ms linear 0ms;
-            -ms-transition: all 300ms linear 0ms;
             -o-transition: all 300ms linear 0ms;
             transition: all 300ms linear 0ms;
+            &:hover {
+                -webkit-box-shadow: 0 4px 10px -2px var(--color-priority);
+                -moz-box-shadow: 0 4px 10px -2px var(--color-priority);
+                box-shadow: 0 4px 10px -2px var(--color-priority);
+            }
             span.bits-uio {
                 top: 10px;
                 position: relative;
@@ -45,6 +56,8 @@
                 i {
                     background-color: var(--color-secondary);
                     padding: 15px;
+                    -webkit-border-radius: 50px;
+                    -moz-border-radius: 50px;
                     border-radius: 50px;
                     color: $color-white;
                 }
