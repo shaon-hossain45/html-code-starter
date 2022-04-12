@@ -11,6 +11,10 @@
 
 (function($, window, document, undefined) {
     "use strict";
+
+
+
+
     /**
      * Scroll bottom to top header animation
      * @param  {[type]}   [description]
@@ -229,6 +233,11 @@
         }).trigger("change");
     });
 
+    /**
+     * Dependable search select type
+     * @param  {[type]}   [description]
+     * @return {[type]}   [description]
+     */
     $(document).ready(function() {
         $("#bitsecureid_jfj").owlCarousel({
             loop: true,
@@ -260,6 +269,12 @@
                 }
             }
         });
+
+        /**
+         * Dependable search select type
+         * @param  {[type]}   [description]
+         * @return {[type]}   [description]
+         */
         $("#bitsecureid_jij").owlCarousel({
             loop: true,
             margin: 20,
@@ -291,6 +306,12 @@
             }
         });
     });
+
+    /**
+     * Dependable search select type
+     * @param  {[type]}   [description]
+     * @return {[type]}   [description]
+     */
     $("#bitsecureid_hfj").owlCarousel({
         loop: true,
         //margin: 10,
@@ -321,5 +342,20 @@
             }
         }
     });
+
+    /**
+     * Dependable search select type
+     * @param  {[type]}   [description]
+     * @return {[type]}   [description]
+     */
+    // $('.bitspix-abr')
+    //     //.fadeOut(0)
+    //     .waypoint(function(direction) {
+    //         if (direction === 'down') {
+    //             $(this.element).addClass('animate__fadeInUp')
+    //         }
+    //     }, {
+    //         offset: 'bottom-in-view'
+    //     })
 
 })(jQuery, window, document);

@@ -44,6 +44,9 @@
         padding-right: 1rem;
         z-index: 1;
     }
+    .bitspix-2zz {
+        margin-bottom: 250px;
+    }
 }
 
 .bitsecureout-moz {
@@ -65,6 +68,7 @@
         z-index: -1;
     }
     &.bitsecurespl-yol {
+        overflow: hidden;
         @include breakpoint($extra-small-phone) {
             .bitsecurepart-phd {
                 margin-top: 1.5rem;
@@ -137,13 +141,13 @@
                 font-weight: 500;
                 color: var(--color-fwhablack);
                 &:not(:last-child)::after {
-                    content: "";
+                    content: "-";
                     position: absolute;
-                    width: 1px;
+                    width: 4px;
                     height: 100%;
                     top: 0;
                     right: 0;
-                    background-color: var(--color-bvblock);
+                    //background-color: var(--color-bvblock);
                 }
                 &:last-child {
                     margin-right: 0;
@@ -313,10 +317,10 @@
                 }
             }
             .bitsecurepin-lwy::before {
-                background-color: $color-white;
+                background-color: var(--color-priority);
             }
             .bitsecurepin-8ga::before {
-                background-color: $color-white;
+                background-color: var(--color-priority);
             }
         }
     }
@@ -387,5 +391,9 @@
         .bitsecurepin-lwy {
             padding-top: 0.25rem;
         }
+    }
+    .bitsecurepin-atu {
+        margin-right: 1px;
+        margin-left: -1px;
     }
 }

@@ -1,0 +1,198 @@
+.bitsecuresec-ijj {
+    padding-top: 150px;
+    .bitsecurepart-apk {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+        .single-post__featured-image {
+            margin-bottom: 30px;
+            text-align: center;
+            min-height: 300px;
+            background-color: #444;
+            position: relative;
+            z-index: 1;
+        }
+        .single-post__featured-image img {
+            display: block;
+            width: 100%;
+        }
+        .single-post__content p {
+            margin-bottom: 24px;
+            color: #2a2a2a;
+            font-size: 1.1rem;
+            line-height: 1.5em;
+        }
+        .single-post__content h1,
+        .single-post__content h2,
+        .single-post__content h3,
+        .single-post__content h4,
+        .single-post__content h5,
+        .single-post__content h6 {
+            color: #000;
+        }
+        .single-post__content blockquote {
+            padding: 52px 70px 52px 105px;
+            background: #ededed;
+            color: #666;
+            border: 0;
+            margin: 0 0 25px;
+            position: relative;
+            border-radius: 5px;
+            font-size: 17px;
+            font-style: italic;
+        }
+        .single-post__content ol,
+        .single-post__content ul {
+            font-size: 17px;
+            line-height: 29px;
+            margin-bottom: 15px;
+            color: #555;
+            padding-left: 40px;
+            list-style: disc outside none;
+            list-style: square;
+        }
+        .single-post__content li {
+            margin-bottom: 8px;
+        }
+        .single-post__content h2 {
+            font-size: 24px;
+            margin: 40px 0 12px;
+            font-weight: 800;
+            line-height: 30px;
+        }
+        .single-post__meta h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            font-weight: 900;
+            color: #000;
+            line-height: 1.528em;
+        }
+        .single-post__meta {
+            text-align: center;
+            padding: 0 30px;
+        }
+        .single-post__meta .meta {
+            margin-bottom: 42px;
+            color: #555;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .single-post__meta .meta .article-author {
+            display: inline-flex;
+            align-items: center;
+        }
+        .single-post__meta .meta .article-author .author__avatar {
+            width: 35px;
+            height: 35px;
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .single-post__meta .meta .article-author .author__name {
+            font-weight: 700;
+            font-size: 18px;
+            color: #000;
+            line-height: 1.667em;
+            text-decoration: none;
+        }
+        .single-post__meta .meta .sep {
+            color: #b3b5b6;
+            padding: 0 15px;
+        }
+        .single-post__meta .meta i {
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        .single-post__meta .meta time i {
+            color: #9b59b6;
+        }
+        .single-post__meta .meta .comments-link i {
+            color: #e74c3c;
+        }
+        .single-post__meta .meta .read-time i {
+            color: #1888f5;
+        }
+    }
+}
+
+.blog__single_footer_social {
+    margin-bottom: 10px;
+    padding: 0 30px;
+}
+
+.blog__single_footer_social .we-social-share-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog__single_footer_social .social-share-text {
+    margin-bottom: 40px;
+}
+
+.blog__single_footer_social .social-share-text .text-dark {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #000;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.blog__single_footer_social .we-social-share-footer {
+    ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        li {
+            width: 42px;
+            height: 42px;
+            margin-right: 7px;
+            span {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                outline: none;
+                color: #fff;
+                font-size: 22px;
+                cursor: pointer;
+                transition: all .2s;
+            }
+            &.share-facebook {
+                background: #3a589b;
+            }
+            &.share-twitter {
+                background: #1da1f2;
+            }
+            &.share-linkedin {
+                background: #0077b5;
+            }
+            &.share-mail {
+                background: #00adee;
+            }
+            &.share-pocket {
+                background: #ef4056;
+            }
+            &.share-pinterest {
+                background: #bd081c;
+            }
+            &.share-telegram {
+                background: #08c;
+            }
+            &.share-whatsapp {
+                background: #075e54;
+            }
+            &.share-skype {
+                background: #00aff0;
+            }
+            &.share-reddit {
+                background: #ff4500;
+            }
+        }
+    }
+}

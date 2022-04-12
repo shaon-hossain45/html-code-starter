@@ -307,7 +307,8 @@
             }
         }
     }
-    &.bitsextra-abc {
+    &.bitsextra-abc,
+    &.bitsecurescr-xnu {
         .bitsecurepart-8ki .bitsecureipart-6dj .bitsecurepin-ipx .bitsecurepix-ioo ul.bits-jii>li>a {
             color: $color-black;
         }
@@ -771,6 +772,61 @@ body.bitsecurescr-2mv .bitsecurepin-ozl {
     opacity: 1;
     visibility: visible;
     left: 0%;
+}
+
+
+/* fixed options */
+
+header.bitsecuresec-2xg.bitsecurescr-xnu {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-animation: bitsecure_fixed .5s ease-out;
+    -moz-animation: bitsecure_fixed .5s ease-out;
+    -o-animation: bitsecure_fixed .5s ease-out;
+    animation: bitsecure_fixed .5s ease-out;
+    background-color: $color-white;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+    z-index: 9 !important;
+    width: 100%;
+    .bitsecurepin-6w4 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    // @include breakpoint($medium-min) {
+    //     .bitsecurepart-8ki {
+    //         display: none;
+    //     }
+    // }
+}
+
+body.bitsecurescr-2mv {
+    .bitsecurepin-ozl {
+        opacity: 1;
+        visibility: visible;
+        left: 0%;
+    }
+}
+
+body.bitsecurescr-vbn.bitsecurescr-xre,
+body.bitsecurescr-xre {
+    main.site-main {
+        padding-top: 159px;
+        @include breakpoint($small-max) {
+            padding-top: 69px;
+        }
+    }
 }
 
 

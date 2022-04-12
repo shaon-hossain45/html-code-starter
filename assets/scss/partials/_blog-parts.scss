@@ -127,6 +127,7 @@
             transition: all 300ms linear 0ms;
             .bitspix-yui {
                 overflow: hidden;
+                min-height: 180px;
                 img {
                     -webkit-transition: all 500ms linear 0ms;
                     -moz-transition: all 500ms linear 0ms;

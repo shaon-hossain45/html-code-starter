@@ -5,6 +5,10 @@
 * Browsers: last 100 version
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: $color-backcolor;
     background-color: var(--color-webback);
